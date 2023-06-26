@@ -3,7 +3,7 @@
 
 <p align="left"> <a href="https://twitter.com/neurosocialist" target="blank"><img src="https://img.shields.io/twitter/follow/neurosocialist?logo=twitter&style=for-the-badge" alt="neurosocialist" /></a> </p>
 
-- The current Hyperfocus is... [What is a website had ADHD?](https://GitHub.com/jasonwarrenuk/jasonwarrenuk.github.io)
+- The current Hyperfocus is... [What if a website had ADHD?](https://GitHub.com/jasonwarrenuk/jasonwarrenuk.github.io)
 
 - 🌱 I’m currently learning **HTML, CSS, JS**
 
