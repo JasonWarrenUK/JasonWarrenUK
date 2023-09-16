@@ -1,5 +1,5 @@
 <h1 align="center">Oh God, it's Jason Warren</h1>
-<h3 align="center">Neurodiverse ‖ AnarchoSocialist ‖ Mouthy Little Gremlin</h3>
+<h3 align="center">Neurodivergent ‖ AnarchoSocialist ‖ Mouthy Little Gremlin</h3>
 
 <p align="left"> <a href="https://twitter.com/neurosocialist" target="blank"><img src="https://img.shields.io/twitter/follow/neurosocialist?logo=twitter&style=for-the-badge" alt="neurosocialist" /></a> </p>
 
