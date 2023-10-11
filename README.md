@@ -2,8 +2,6 @@
 
 <h3 align="center">Neurodivergent • Anarchosocialist • Mouthy Little Gremlin</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=jasonwarrenuk&label=Profile%20views&color=0e75b6&style=flat" alt="jasonwarrenuk" /> </p>
-
 - 🔭 The current hyperfocus is [procedurally generating extinct cultures & then making players feel bad for being colonialist in their interpretations](https://github.com/JasonWarrenUK/Those-Who-Came-Before)
 
 - 🌱 I’m currently learning **asynchronous JavaScript & API wrangling**
