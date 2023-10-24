@@ -18,7 +18,7 @@
 
 - 📫 How to reach me: **~~gently, and with a kind smile~~ contact.jwarren@gmail.com**
 
-- ⚡ Fun Fact **there is no ethical consumption under late-stage capitalism**
+- ⚡ Fun Fact: **There is no ethical consumption under late-stage capitalism**
 
 <hr/>
 
