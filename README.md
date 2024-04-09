@@ -6,7 +6,7 @@
 
 - 🔭 The current hyperfocus is [procedurally generating extinct cultures & then making players feel bad for being colonialist in their interpretations](https://github.com/JasonWarrenUK/Those-Who-Came-Before)
 
-- 🌱 I’m currently learning about **JavaScript frameworks & libraries**, **RegEx** & **MongoDB**
+- 🌱 I’m currently learning about **Typescript**, **React**, **RegEx**, **context-free grammars** & **MongoDB**
 
 - 👯 I’m looking to collaborate on **useless-yet-interesting linguistics utilities & neurodivergent revolutionary digital infrastructure**
 
