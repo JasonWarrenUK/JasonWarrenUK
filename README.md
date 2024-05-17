@@ -4,7 +4,17 @@
 
 <hr />
 
-- 🔭 The current hyperfocus is [procedurally generating extinct cultures & then making players feel bad for being colonialist in their interpretations](https://github.com/JasonWarrenUK/Those-Who-Came-Before)
+<h2 align="left">Current Hyperfoci</h2>
+
+
+- 🏛 procedurally generating extinct cultures & then [making players feel bad for being colonialist in their interpretations](https://github.com/JasonWarrenUK/Those-Who-Came-Before)
+- ⏳ taking someone who witnessed a historical event and [working out what else they saw in their life](https://github.com/JasonWarrenUK/Grand-Chronicle)
+- 🔮 rendering my constant sense of inadequacy when I teach in code by [building a better curriculum planner](https://github.com/JasonWarrenUK/Inclusive-Dynamics)
+- 🗑 doing a ridiculous amount of work now in order to [avoid doing a small amount of work later](https://github.com/JasonWarrenUK/Pretty-Vacancies)
+
+<hr />
+
+<h2 align="left">What Is a Jason?</h2>
 
 - 🌱 I’m currently learning about **Typescript**, **React**, **RegEx**, **context-free grammars** & **MongoDB**
 
