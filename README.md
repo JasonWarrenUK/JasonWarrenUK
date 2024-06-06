@@ -50,7 +50,7 @@ I'm also dabbling with...
 
 <hr />
 
-<h3 align="center">My Stack</h3>
+<h2 align="center">My Stack</h2>
 
 <p align="center">
   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
@@ -80,7 +80,7 @@ I'm also dabbling with...
 
 <hr/>
 
-<h3 align="center">Hit Me Up</h3>
+<quote align="center">Hit Me Up</quote>
 
 <p align="center">
   <a href="https://twitter.com/neurosocialist" target="blank">
