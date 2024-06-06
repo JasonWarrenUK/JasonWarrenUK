@@ -14,19 +14,25 @@
 
 <hr />
 
-<h2 align="left">What Is a Jason?</h2>
+<h2 align="left">Field Guide to Jason</h2>
 
-- 🌱 I’m currently...
-  - seriously learning about...
-    - **Typescript**
-    - **Express**
-    - **Pug**
-    - **MongoDB**
-  - dabbling with...
-    - **React**
-    - **RegEx**
-    - **context-free grammars**
-    - **Svelte**
+<h3 align="left">What Is It Doing?</h3>
+
+🌱 I’m currently seriously learning about...
+
+- **Typescript**
+- **Express**
+- **Pug**
+- **MongoDB**
+
+I'm also dabbling with...
+
+- **React**
+- **RegEx**
+- **context-free grammars**
+- **Svelte**
+
+<h3 align="left">How Does It Behave?</h3>
 
 - 👯 I’m looking to collaborate on **useless-yet-interesting linguistics utilities & neurodivergent revolutionary digital infrastructure**
 
