@@ -80,7 +80,7 @@ I'm also dabbling with...
 
 <hr/>
 
-<quote align="center">Hit Me Up</quote>
+<pre align="center">Hit Me Up</pre>
 
 <p align="center">
   <a href="https://twitter.com/neurosocialist" target="blank">
