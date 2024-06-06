@@ -16,7 +16,17 @@
 
 <h2 align="left">What Is a Jason?</h2>
 
-- 🌱 I’m currently learning about **Typescript**, **React**, **RegEx**, **context-free grammars** & **MongoDB**
+- 🌱 I’m currently...
+  - seriously learning about...
+    - **Typescript**
+    - **Express**
+    - **Pug**
+    - **MongoDB**
+  - dabbling with...
+    - **React**
+    - **RegEx**
+    - **context-free grammars**
+    - **Svelte**
 
 - 👯 I’m looking to collaborate on **useless-yet-interesting linguistics utilities & neurodivergent revolutionary digital infrastructure**
 
