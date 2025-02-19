@@ -4,10 +4,15 @@
 
 <hr />
 
-<h2 align="left">Current Hyperfoci</h2>
+<h2 align="left">Hyperfoci</h2>
 
-- 🗳 ~~radicalising~~ enabling voters by surfacing [what their local candidates have said about their identity](https://github.com/JasonWarrenUK/got-my-back)
+<h3 align="right">Active</h3>
+
+- 🧵 supporting Goblin Tribe by turning [free text journal entries](https://github.com/foundersandcoders/lift-frontend) into [trackable living conversations](https://github.com/foundersandcoders/lift-backend) about what we need to thrive at work
 - 🏛 procedurally generating extinct cultures & then [making players feel bad for being colonialist in their interpretations](https://github.com/JasonWarrenUK/Those-Who-Came-Before)
+
+<h3 align="right">Dormant</h3>
+
 - ⏳ taking someone who witnessed a historical event and [working out what else they saw in their life](https://github.com/JasonWarrenUK/Grand-Chronicle)
 - 🔮 rendering my constant sense of inadequacy when I teach in code by [building a better curriculum planner](https://github.com/JasonWarrenUK/Inclusive-Dynamics)
 - 🗑 doing a ridiculous amount of work now in order to [avoid doing a small amount of work later](https://github.com/JasonWarrenUK/Pretty-Vacancies)
@@ -20,16 +25,12 @@
 
 🌱 I’m currently seriously learning about...
 
-- **Typescript**
-- **Express**
-- **Pug**
-- **MongoDB**
+- **Deno**
+- **Oak**
+- **neo4j**
 
 I'm also dabbling with...
 
-- **React**
-- **RegEx**
-- **context-free grammars**
 - **Svelte**
 
 <h3 align="left">How Does It Behave?</h3>
@@ -38,13 +39,13 @@ I'm also dabbling with...
 
 - 🤝 I’m looking for help with **basic life skills**
 
-- 👨‍💻 Also I bimble about with [ink stories](https://neurosocialist.itch.io/)
+- 👨‍💻 Also I have bimbled about with [ink stories](https://neurosocialist.itch.io/)
 
 - 📝 I wroted a book: [here it is](https://www.amazon.co.uk/Creating-Worlds-Immersive-Theatre-Making/dp/1848424450)
 
 - 💬 Ask me about **arts pedagogy & interactive narrative**
 
-- 📫 How to reach me: **~~gently, and with a kind smile~~ contact.jwarren@gmail.com**
+- 📫 How to reach me: **~~gently, and with a kind smile~~ jason@foundersandcoders.com**
 
 - ⚡ Fun Fact: **There is no ethical consumption under late-stage capitalism**
 
