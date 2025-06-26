@@ -9,11 +9,11 @@
 - ☑️ turning the festering un-acknowledged accessibility questionnaires for new employees into a [dynamic evolving conversation](https://github.com/foundersandcoders/Lift02)
 - 🏛 procedurally generating extinct cultures & then [making players feel bad for being colonialist in their interpretations](https://github.com/JasonWarrenUK/those-who-came-before)
 
-<h3 align="right">Partly-Fulfilled Ambitions</h3>
+<h3 align="right">Dormant Ambitions</h3>
 
 - 🧵 supporting Goblin Tribe by turning [free text journal entries](https://github.com/foundersandcoders/lift-frontend) into [trackable living conversations](https://github.com/foundersandcoders/lift-backend) about what we need to thrive at work
 
-<h3 align="right">The Ever-Growing Seed Vault</h3>
+<h3 align="right">Seed Vault</h3>
 
 - ✒️ making a game about everyone's favourite topic: [writing a dissertation in one night whilst staving off existential angst](https://github.com/JasonWarrenUK/the-work)
 - ⏳ taking someone who witnessed a historical event and [working out what else they saw in their life](https://github.com/JasonWarrenUK/grand-chronicle)
@@ -29,7 +29,7 @@
 - [Prisms](https://github.com/JasonWarrenUK/prisms) (2020)
 - [My Brothers, Counting](https://github.com/JasonWarrenUK/my-brothers-counting) (2019)
 
-<h3 align="right">Graveyard of Ideas</h3>
+<h3 align="right">Idea Graveyard</h3>
 
 - [Got My Back](https://github.com/JasonWarrenUK/got-my-back)
 - [Knowledge Kata](https://github.com/JasonWarrenUK/knowledge-kata)
