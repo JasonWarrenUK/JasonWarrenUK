@@ -6,16 +6,33 @@
 
 <h2 align="left">Hyperfoci</h2>
 
-<h3 align="right">Active</h3>
+- ☑️ turning the festering un-acknowledged accessibility questionnaires for new employees into a [dynamic evolving conversation](https://github.com/foundersandcoders/Lift02)
+- 🏛 procedurally generating extinct cultures & then [making players feel bad for being colonialist in their interpretations](https://github.com/JasonWarrenUK/those-who-came-before)
+
+<h3 align="right">Partly-Fulfilled Ambitions</h3>
 
 - 🧵 supporting Goblin Tribe by turning [free text journal entries](https://github.com/foundersandcoders/lift-frontend) into [trackable living conversations](https://github.com/foundersandcoders/lift-backend) about what we need to thrive at work
-- 🏛 procedurally generating extinct cultures & then [making players feel bad for being colonialist in their interpretations](https://github.com/JasonWarrenUK/Those-Who-Came-Before)
 
-<h3 align="right">Dormant</h3>
+<h3 align="right">The Ever-Growing Seed Vault</h3>
 
-- ⏳ taking someone who witnessed a historical event and [working out what else they saw in their life](https://github.com/JasonWarrenUK/Grand-Chronicle)
-- 🔮 rendering my constant sense of inadequacy when I teach in code by [building a better curriculum planner](https://github.com/JasonWarrenUK/Inclusive-Dynamics)
-- 🗑 doing a ridiculous amount of work now in order to [avoid doing a small amount of work later](https://github.com/JasonWarrenUK/Pretty-Vacancies)
+- ✒️ making a game about everyone's favourite topic: [writing a dissertation in one night whilst staving off existential angst](https://github.com/JasonWarrenUK/the-work)
+- ⏳ taking someone who witnessed a historical event and [working out what else they saw in their life](https://github.com/JasonWarrenUK/grand-chronicle)
+- [Flyt](https://github.com/JasonWarrenUK/flyt)
+- 🔮 rendering my constant sense of inadequacy when I teach in code by building a [note-taking app that supports SEN groups](https://github.com/JasonWarrenUK/sparker)
+- 🗑 doing a ridiculous amount of work now in order to [avoid doing a small amount of work later](https://github.com/JasonWarrenUK/pretty-vacancies)
+
+<h3 align="right">Whimsies</h3>
+
+- [Nihilistic Onboarding Tool](https://github.com/JasonWarrenUK/nihilistic-onboarder) (2025)
+- [Hat Recommender](https://github.com/JasonWarrenUK/telebrain) (2025)
+- [Petulant God](https://github.com/JasonWarrenUK/petulant-god) (2023)
+- [Prisms](https://github.com/JasonWarrenUK/prisms) (2020)
+- [My Brothers, Counting](https://github.com/JasonWarrenUK/my-brothers-counting) (2019)
+
+<h3 align="right">Graveyard of Ideas</h3>
+
+- [Got My Back](https://github.com/JasonWarrenUK/got-my-back)
+- [Knowledge Kata](https://github.com/JasonWarrenUK/knowledge-kata)
 
 <hr />
 
@@ -25,13 +42,13 @@
 
 🌱 I’m currently seriously learning about...
 
-- **Deno**
-- **Oak**
+- **Svelte**
 - **neo4j**
+- **MCP servers**
 
 I'm also dabbling with...
 
-- **Svelte**
+- **ink** (*CLI Building Framework*)
 
 <h3 align="left">How Does It Behave?</h3>
 
