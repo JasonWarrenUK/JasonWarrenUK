@@ -5,7 +5,7 @@
 <h2 align="center">Dev Profile API</h2>
 
 <details>
-  <summary alight="left"><h3>.src/index.js</h3></summary>
+  <summary alight="left"><h3>.src/index.ts</h3></summary>
   
   ```ts
   import { desc } from "./src/utils/getProfile.ts";
