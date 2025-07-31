@@ -86,8 +86,8 @@
     ],
     jason: [
       { org: "@FAC-31", role: "facilitator", from: date(2025-02), to: date(now()) },
-      { org: "@foundersandcoders,"  role: "dev", from: date(2024-09), to: date(now()) },
-      { org: "@fac30", role: "grad", from: date(2024-09), to: date(2024-09) },
+      { org: "@foundersandcoders",  role: "dev", from: date(2024-09), to: date(now()) },
+      { org: "@fac30", role: "grad", from: date(2024-09), to: date(2024-12) },
       { org: "@FAC29A", role: "grad", from: date(2023-09), to: date(2023-11) }
     ]
   };
