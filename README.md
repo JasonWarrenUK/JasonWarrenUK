@@ -37,7 +37,7 @@
 
     const roles = user.roles
       ? user.roles
-      : !warn
+      : safe
         ? roles.default
         : roles.jason;
 
