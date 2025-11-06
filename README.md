@@ -5,11 +5,11 @@
 <h2 align="center">Dev Profile API</h2>
 
 <details>
-  <summary alight="left"><h3>.src/index.ts</h3></summary>
+  <summary alight="left"><h3>./src/index.ts</h3></summary>
   
   ```ts
-  import { desc } from "./src/utils/getProfile.ts";
-  import type { User } from "./src/lib/types.ts"
+  import { desc } from "./utils/getProfile";
+  import type { User } from "$lib/types"
 
   const jason: User = { name: "Jason" };
 
@@ -22,8 +22,8 @@
   <summary align="right"><h3>./src/utils/getProfile.ts</h3></summary>
 
   ```ts
-  import { roles } from "./db/facts.ts";
-  import type { User, Profile } from "./src/lib/types.ts"
+  import { roles } from "../../db/facts";
+  import type { User, Profile } from "$lib/types"
 
   export function desc(user: User): Profile {
     const safe = (user.name != "Jason");
@@ -53,7 +53,7 @@
 </details>
 
 <details>
-  <summary align="left"><h3>./src/lib/types.ts</h3></summary>
+  <summary align="left"><h3>./src/lib/types.d.ts</h3></summary>
   
   ```ts
   export interface Role {
