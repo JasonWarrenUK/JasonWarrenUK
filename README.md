@@ -4,7 +4,7 @@
 
 <h2 align="center">Dev Profile API</h2>
 
-<details>
+<details align="left">
   <summary alight="left"><h3>./src/index.ts</h3></summary>
   
   ```ts
@@ -15,10 +15,10 @@
 
   desc(jason);
   ```
-
+  <hr/>
 </details>
 
-<details>
+<details align="right">
   <summary align="right"><h3>./src/utils/getProfile.ts</h3></summary>
 
   ```ts
@@ -49,10 +49,10 @@
     }
   }
   ```
-
+  <hr/>
 </details>
 
-<details>
+<details align="left">
   <summary align="left"><h3>./src/lib/types.d.ts</h3></summary>
   
   ```ts
@@ -73,10 +73,10 @@
     desc: string,
   };
   ```
-
+  <hr/>
 </details>
 
-<details>
+<details align="right">
   <summary align="right"><h3>./db/facts.ts</h3></summary>
     
   ```ts
@@ -92,31 +92,34 @@
     ]
   };
   ```
-
+  <hr/>
 </details>
 
 ---
 
 <h2 align="center">The Debris Left in My Wake</h2>
 
-<details><summary align="left"><h3>Current Hyperfoci</h3></summary>
+<details align="left">
+  <summary align="left"><h3>Current Hyperfoci</h3></summary>
 
   |   | Name | Description | Links |
   | - | ---- | ----------- | ----- |
   | ☑️ | ***Name TBD*** | turn static accessibility surveys into dynamic evolving conversations | [repo](github.com/foundersandcoders/Lift02) |
   | 🏛 | **Those Who Came Before** | procedurally generate artefacts from extinct fictional cultures & then make players deal with how they interpreted them | [repo](github.com/JasonWarrenUK/those-who-came-before) |
-
+  <hr/>
 </details>
 
-<details><summary align="right"><h3>Dormant Ambitions</h3></summary>
+<details align="right">
+  <summary align="right"><h3>Dormant Ambitions</h3></summary>
 
   |   | Name | Description | Links |
   | - | ---- | ----------- | ----- |
   | 🧵 | **Beacons** | store free text journals as actionable conversation graphs | [client](github.com/foundersandcoders/lift-frontend) / [server](github.com/foundersandcoders/lift-backend) |
-
+  <hr/>
 </details>
 
-<details><summary align="left"><h3>Seed Vault</h3></summary>
+<details>
+  <summary align="left" align="left"><h3>Seed Vault</h3></summary>
 
   <h4 align="center">Apps</h4>
 
@@ -132,10 +135,11 @@
   | - | ---- | ----------- | ----- |
   | ✒️ | **The Work** | write a thesis in one night whilst staving off existential angst | [repo](github.com/JasonWarrenUK/the-work) |
   |   | **Flyt** | defeat the village's champion boaster by using a changing world as inspiration | [repo](github.com/JasonWarrenUK/flyt) |
+  <hr/>
+</details>
 
-  </details>
-
-<details><summary align="right"><h3>Whimsies</h3></summary>
+<details align="right">
+  <summary align="right"><h3>Whimsies</h3></summary>
 
   | Name | Links | Year |
   | ---- | ----- | ---- |
@@ -145,25 +149,58 @@
   | **Melonhead** | [itch](neurosocialist.itch.io/melonhead) | 2022 |
   | **Prisms** | [itch](neurosocialist.itch.io/prisms)/[repo](github.com/JasonWarrenUK/prisms) | 2021 |
   | **My Brothers, Counting** | [itch](neurosocialist.itch.io/brothers-trying-to-count) | 2020 |
-
+  <hr/>
 </details>
 
-<details><summary align="left"><h3>Idea Graveyard</h3></summary>
+<details align="left">
+  <summary align="left"><h3>Idea Graveyard</h3></summary>
 
   | Name | Links |
   | ---- | ----- |
   | **Got My Back** | [Repo](github.com/JasonWarrenUK/got-my-back) |
   | **Knowledge Kata** | [Repo](github.com/JasonWarrenUK/knowledge-kata) |
-
+  <hr/>
 </details>
 
 ---
 
+<!-- ====== SOCIALS ====== -->
+<h2 align="center">Hit Me Up</h2>
+
+<p align="center">
+  <a align="center" href="https://twitter.com/neurosocialist" target="blank">
+    <img align="center" alt="@neurosocialist on Twitter"
+      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
+      height="30"
+      width="40"
+    />
+  </a>
+  
+  <a align="center" href="https://linkedin.com/in/jasonwarrenuk" target="blank">
+    <img align="center" alt="jasonwarrenuk on LinkedIn"
+      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+      height="30"
+      width="40"
+    />
+  </a>
+  
+  <a align="center" href="https://instagram.com/neurosocialist" target="blank">
+    <img align="center" alt="neurosocialist"
+      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
+      height="30"
+      width="40"
+    />
+  </a>
+</p>
+
+<hr/>
+
 <h2 align="center">Field Guide to Jason</h2>
 
-<details><summary align="left"><h3>What Is It Doing?</h3></summary>
+<details align="left">
+  <summary align="left"><h3>What Is It Doing?</h3></summary>
 
-  🌱 I’m currently seriously learning about...
+  I’m currently seriously learning about...
   
   - **Svelte**
   - **neo4j**
@@ -172,79 +209,95 @@
   I'm also dabbling with...
   
   - **ink** (*CLI Building Framework*)
-
+  
+  <hr/>
 </details>
 
-<details><summary align="right"><h3>How Does It Behave?</h3></summary>
-
-  - 👯 I’m looking to collaborate on **useless-yet-interesting linguistics utilities & neurodivergent revolutionary digital infrastructure**
-  - 🤝 I’m looking for help with **basic life skills**
-  - 👨‍💻 Also I started by bimbling about with [ink stories](neurosocialist.itch.io/)
-  - 📝 I wroted a book: [here it is](amazon.co.uk/Creating-Worlds-Immersive-Theatre-Making/dp/1848424450)
-  - 💬 Ask me about **arts pedagogy & interactive narrative**
-  - 📫 How to reach me: **~~gently, and with a kind smile~~ jason@foundersandcoders.com**
-  - ⚡ Fun Fact: **There is no ethical consumption under late-stage capitalism**
-
+<details align="right">
+  <summary align="right"><h3>How Does It Behave?</h3></summary>
+  
+  <h4 align="right"><s>I Need Help</s>Collaboration Opportunities</h4>
+  
+  - I’m looking to collaborate on **useless-yet-interesting linguistics utilities & neurodivergent revolutionary digital infrastructure**
+  - I’m looking for help with **basic life skills**
+  
+  <h4 align="right">Past Lives</h4>
+  
+  - Also I started by bimbling about with [ink stories](neurosocialist.itch.io/)
+  - I wroted a book: [here it is](amazon.co.uk/Creating-Worlds-Immersive-Theatre-Making/dp/1848424450)
+  
+  <h4 align="right">Trivia</h4>
+  
+  - Ask me about **arts pedagogy & interactive narrative**
+  - How to reach me: **~~gently, and with a kind smile~~ jason@foundersandcoders.com**
+  - Fun Fact: **There is no ethical consumption under late-stage capitalism**
 </details>
 
----
-
-<h2 align="center">Hit Me Up</h2>
-
-<p align="center">
-  <a href="https://twitter.com/neurosocialist" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="neurosocialist" height="30" width="40" />
-  </a>
-  
-  <a href="https://linkedin.com/in/jasonwarrenuk" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jasonwarrenuk" height="30" width="40" />
-  </a>
-  
-  <a href="https://instagram.com/neurosocialist" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="neurosocialist" height="30" width="40" />
-  </a>
-</p>
-
----
-
-<h2 align="center">is rl dev, look</h2>
-
-<p></p>
+<hr/>
 
 <div align="center">
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-  </a>
+  <!-- ====== SKILL BRAG BULLSHIT ====== -->
+  <div id="skills" align="center">
+    <h2 align="center">is rl dev, look</h2>
+    <p/>
+    <!-- ====== BADGES ====== -->
+    <div id="badges" align="center">
+      <h3 align="center">meny langs duz it spk</h3>
+      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+        <img alt="css3"
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+          width="40"
+          height="40"
+        />
+      </a>
+      <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+        <img alt="git"
+          src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+          width="40"
+          height="40"
+        />
+      </a>
+      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+        <img alt="html5"
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+          width="40"
+          height="40"
+        />
+      </a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+        <img alt="javascript"
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+          width="40"
+          height="40"
+        />
+      </a>
+    </div>
+    <p/>
+    <!-- ====== TOP LANGUAGES ====== -->
+    <div id="languages" align="center">
+      <img alt="jasonwarrenuk"
+        src="https://github-readme-stats.vercel.app/api/top-langs?username=jasonwarrenuk&show_icons=true&locale=en&layout=compact"
+      />
+    </div>
+  </div>
   
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
-  </a>
-  
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-  </a>
-  
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-  </a>
-</div>
-
-<p></p>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jasonwarrenuk&show_icons=true&locale=en&layout=compact" alt="jasonwarrenuk" />
-</div>
-
-<p></p>
-
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=jasonwarrenuk&theme=gruvbox" alt="jasonwarrenuk" />
-  </a>
-</p>
-
-<div align="center">
-  <a href="https://www.codewars.com/users/JasonWarrenUK" target="blank">
-    <img src="https://www.codewars.com/users/JasonWarrenUK/badges/large?theme=light" alt="codewars" />
-  </a>
+  <!-- ====== SHINY BRAG BULLSHIT ====== -->
+  <div align="center">
+    <!-- ====== TROPHY RACK ====== -->
+    <div id="trophies" align="center">
+      <a href="https://github.com/ryo-ma/github-profile-trophy">
+        <img alt="JasonWarrenUK's GitHub Trophy Rack, courtesy of ryo-ma's incredible work"
+          src="https://github-profile-trophy.vercel.app/?username=jasonwarrenuk&theme=gruvbox&no-frame=false&no-bg=false&rank=-C,-?&row=3&column=3&margin-h=15&margin-w=15"
+        />
+      </a>
+    </div>
+    <!-- ====== CODEWARS ====== -->
+    <div id="codewars" align="center">
+      <a href="https://www.codewars.com/users/JasonWarrenUK" target="blank">
+        <img alt="JasonWarrenUK's neglected codewars account"
+          src="https://www.codewars.com/users/JasonWarrenUK/badges/large?theme=light"
+        />
+      </a>
+    </div>
+  </div>
 </div>
