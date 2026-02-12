@@ -9,7 +9,7 @@
 
 <div id="src/index.ts">
 <details align="left">
-<summary><h3>./src/index.ts</h3></summary>
+<summary><strong>./src/index.ts</strong></summary>
 
 <code align="left"><pre>
 import { desc } from "./utils/getProfile";
@@ -24,7 +24,7 @@ desc(jason);
 
 <div id="src/utils/getProfile.ts">
 <details align="right">
-<summary><h3>./src/utils/getProfile.ts</h3></summary>
+<summary><strong>./src/utils/getProfile.ts</strong></summary>
 
 <code align="right"><pre>
 import { roles } from "../../db/facts";
@@ -59,7 +59,7 @@ roles: roles
 
 <div id="src/lib/types.d.ts">
 <details align="left">
-<summary><h3>./src/lib/types.d.ts</h3></summary>
+<summary><strong>./src/lib/types.d.ts</strong></summary>
 
 <code align="left"><pre>
 export interface Role {
@@ -84,7 +84,7 @@ desc: string,
 
 <div id="db/facts.ts">
 <details align="right">
-<summary><h3>./db/facts.ts</h3></summary>
+<summary><strong>./db/facts.ts</strong></summary>
 
 <code align="right"><pre>
 export const roles = {
