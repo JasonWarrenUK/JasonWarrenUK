@@ -12,12 +12,13 @@
 <summary><strong>./src/index.ts</strong></summary>
 
 <code align="left"><pre>
-import { desc } from "./utils/getProfile";
-import type { User } from "$lib/types";
+import { describe } from "./utils/getProfile";
 
-const jason: User = { name: "Jason" };
+const jason = { name: "Jason" } as const;
+const profile = describe(jason);
 
-desc(jason);
+console.log(profile.species);  // "goblin"
+console.log(profile.desc);     // "neurodivergent anarchosocialist goblin"
 </pre></code>
 </details>
 </div>
@@ -28,30 +29,30 @@ desc(jason);
 
 <code align="right"><pre>
 import { roles } from "../../db/facts";
-import type { User, Profile } from "$lib/types"
+import type { Profile } from "../lib/types";
 
-export function desc(user: User): Profile {
-const safe = (user.name != "Jason");
-const species = safe ? "human" : "goblin";
-
-const tags = [
-safe ? "pro" : "neurodivergent",
-safe ? "fullstack" : "anarchosocialist",
-safe ? "dev" : "goblin"
-];
-
-const roles = user.roles
-? user.roles
-: safe
-? roles.default
-: roles.jason;
-
-return {
-name: user.name,
-species: species,
-desc: join(tags, " "),
-roles: roles
+function isJason(name: string): name is "Jason" {
+  return name === "Jason";
 }
+
+export function describe(user: { name: "Jason" }): Profile&lt;"goblin"&gt;;
+export function describe(user: { name: string }): Profile&lt;"human"&gt;;
+export function describe(user: { name: string }): Profile {
+  if (isJason(user.name)) {
+    return {
+      name: user.name,
+      species: "goblin",
+      desc: "neurodivergent anarchosocialist goblin",
+      roles: roles.jason,
+    };
+  }
+
+  return {
+    name: user.name,
+    species: "human",
+    desc: ["pro", "fullstack", "dev"].join(" "),
+    roles: roles.default,
+  };
 }
 </pre></code>
 </details>
@@ -62,22 +63,28 @@ roles: roles
 <summary><strong>./src/lib/types.d.ts</strong></summary>
 
 <code align="left"><pre>
-export interface Role {
-org: string,
-role: string,
-from?: string,
-to?: string
-};
+type Species = "human" | "goblin";
 
-export interface User {
-name: string,
-roles?: Role[]
-};
+type Adjective = "pro" | "fullstack" | "neurodivergent" | "anarchosocialist";
+type Noun = "dev" | "goblin";
+type Tag = `${Adjective} ${Noun}`;
 
-export interface Profile extends User {
-species: string,
-desc: string,
-};
+interface Role {
+  readonly org: string;
+  readonly role: string;
+  readonly level?: string;
+  readonly from: string;
+  readonly to?: string;
+}
+
+interface Profile&lt;S extends Species = "human"&gt; {
+  readonly name: string;
+  readonly species: S;
+  readonly desc: S extends "goblin"
+    ? "neurodivergent anarchosocialist goblin"
+    : string;
+  readonly roles: readonly Role[];
+}
 </pre></code>
 </details>
 </div>
@@ -87,17 +94,23 @@ desc: string,
 <summary><strong>./db/facts.ts</strong></summary>
 
 <code align="right"><pre>
+export const stack = [
+  "svelte", "deno", "claude", "ink",
+] as const satisfies readonly string[];
+
 export const roles = {
-default: [
-{ org: "@techStartUp", role: "innovation engineer" }
-],
-jason: [
-{ org: "@FAC-31", role: "facilitator", from: date(2025-02), to: date(now()) },
-{ org: "@foundersandcoders",  role: "dev", from: date(2024-09), to: date(now()) },
-{ org: "@fac30", role: "grad", from: date(2024-09), to: date(2024-12) },
-{ org: "@FAC29A", role: "grad", from: date(2023-09), to: date(2023-11) }
-]
-};
+  default: [
+    { org: "@techStartUp", role: "innovation engineer" },
+  ],
+  jason: [
+    { org: "@foundersandcoders", role: "apprentice dev", level: "mid/senior (shhh)", from: "2025" },
+    { org: "@foundersandcoders", role: "L6 AI apprenticeship mentor", from: "2025" },
+    { org: "@FAC-31", role: "facilitator", from: "2025-02", to: "2025-07" },
+    { org: "@foundersandcoders", role: "dev", from: "2024-09", to: "2025" },
+    { org: "@fac30", role: "grad", from: "2024-09", to: "2024-12" },
+    { org: "@FAC29A", role: "grad", from: "2023-09", to: "2023-11" },
+  ],
+} as const;
 </pre></code>
 </details>
 </div>
@@ -119,16 +132,108 @@ jason: [
 <th>Links</th>
 </tr>
 <tr>
-<td>☑️</td>
-<td><strong>Name TBD</strong></td>
-<td>turn static accessibility surveys into dynamic evolving conversations</td>
-<td><a href="github.com/foundersandcoders/Lift02">repo</a></td>
+<td>🏗️</td>
+<td><strong>FAC Internal Platform</strong></td>
+<td>ILR toolkit for apprenticeship data submission, with <a href="https://github.com/Jaz-spec">@Jaz-spec</a>, Izaak & Dan</td>
+<td></td>
 </tr>
 <tr>
-<td>🏛
+<td>✒️</td>
+<td><strong>The Work</strong></td>
+<td>write a thesis in one night whilst staving off existential angst</td>
+<td><a href="https://github.com/JasonWarrenUK/the-work">repo</a></td>
+</tr>
+<tr>
+<td>👹</td>
+<td><strong>Goblin Mode</strong></td>
+<td>commands, skills, hooks, agents & output styles for Claude Code</td>
+<td><a href="https://github.com/JasonWarrenUK/goblin-mode">repo</a></td>
+</tr>
+<tr>
+<td>🏛️</td>
 <td><strong>Those Who Came Before</strong></td>
-<td>procedurally generate artefacts from extinct fictional cultures & then make players deal with how they interpreted them</td>
-<td><a href="github.com/JasonWarrenUK/those-who-came-before">repo</a></td>
+<td>try to understand a vanished culture by interpreting procedurally generated artefacts</td>
+<td><a href="https://github.com/JasonWarrenUK/those-who-came-before">repo</a></td>
+</tr>
+</table>
+</details>
+
+<details align="right" id="completed">
+<summary><h3>Completed</h3></summary>
+
+<table align="right">
+<tr>
+<th>Name</th>
+<th>Team</th>
+<th>Year</th>
+<th>Links</th>
+</tr>
+<tr>
+<td><strong>Iris</strong></td>
+<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, Izaak & Dan</td>
+<td>2026</td>
+<td><a href="https://github.com/foundersandcoders/iris">repo</a></td>
+</tr>
+<tr>
+<td><strong>Workwise</strong></td>
+<td><a href="https://github.com/AlexVOiceover">@AlexVOiceover</a></td>
+<td>2025</td>
+<td><a href="https://github.com/foundersandcoders/workwise">repo</a></td>
+</tr>
+<tr>
+<td><strong>Things We Do</strong></td>
+<td><a href="https://github.com/jackcasstlesjones">@jackcasstlesjones</a>, <a href="https://github.com/maxitect">@maxitect</a> & <a href="https://github.com/gurtatiLND">@gurtatiLND</a></td>
+<td>2024</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sakura</strong></td>
+<td><a href="https://github.com/jackcasstlesjones">@jackcasstlesjones</a> & <a href="https://github.com/JoshCodedit">@JoshCodedit</a></td>
+<td>2024</td>
+<td></td>
+</tr>
+</table>
+</details>
+
+<details align="left" id="seed-vault">
+<summary><h3>Seed Vault</h3></summary>
+
+<table align="left">
+<tr>
+<th></th>
+<th>Name</th>
+<th>Description</th>
+<th>Links</th>
+</tr>
+<tr>
+<td>🍞</td>
+<td><strong>Bag of Bread</strong></td>
+<td>crumbs and nuggets for the Hovis-inclined</td>
+<td><a href="https://github.com/JasonWarrenUK/Bag-of-Bread">repo</a></td>
+</tr>
+<tr>
+<td>🔮</td>
+<td><strong>Sparker</strong></td>
+<td>a note-taking app that supports SEN groups</td>
+<td></td>
+</tr>
+<tr>
+<td>⏳</td>
+<td><strong>Grand Chronicle</strong></td>
+<td>taking someone who witnessed a historical event & see what else they lived through</td>
+<td></td>
+</tr>
+<tr>
+<td>🗑️</td>
+<td><strong>Pretty Vacancies</strong></td>
+<td>(1) ridiculous amount of work now (2) small convenience later</td>
+<td></td>
+</tr>
+<tr>
+<td>🔬</td>
+<td><strong>Prism</strong></td>
+<td>visualise educational networks & deliver personalised learning through AI-curated paths</td>
+<td><a href="https://github.com/foundersandcoders/prism">repo</a></td>
 </tr>
 </table>
 </details>
@@ -144,127 +249,113 @@ jason: [
 <th>Links</th>
 </tr>
 <tr>
+<td>🤖</td>
+<td><strong>Rhea</strong></td>
+<td>an LLM-powered assistant for democratic/peer-led learning cohorts</td>
+<td><a href="https://github.com/foundersandcoders/rhea">repo</a></td>
+</tr>
+<tr>
+<td>💭</td>
+<td><strong>Inconsequential Thinking</strong></td>
+<td></td>
+<td><a href="https://github.com/JasonWarrenUK/inconsequential-thinking">repo</a></td>
+</tr>
+<tr>
 <td>🧵</td>
 <td><strong>Beacons</strong></td>
 <td>store free text journals as actionable conversation graphs</td>
-<td><a href="github.com/foundersandcoders/lift-frontend">client</a> / <a href="github.com/foundersandcoders/lift-backend">server</a></td>
+<td><a href="https://github.com/foundersandcoders/beacons-backend">server</a> / <a href="https://github.com/foundersandcoders/beacons-frontend-v2">client</a></td>
 </tr>
 </table>
 </details>
 
-<details align="left" id="seed-vault">
-<summary align="left" align="left"><h3>Seed Vault</h3></summary>
-
-<h4 align="center">Apps</h4>
-
-<table align="left">>
-<tr>
-<th></th>
-<th>Name</th>
-<th>Description</th>
-<th>Links</th>
-</tr>
-<tr>
-<td>⏳</td>
-<td><strong>Grand Chronicle</strong></td>
-<td>taking someone who witnessed a historical event & see what else they lived through</td>
-<td><a href="github.com/JasonWarrenUK/grand-chronicle">repo</a></td>
-</tr>
-<tr>
-<td>🔮</td>
-<td><strong>Sparker</strong></td>
-<td>a note-taking app that supports SEN groups</td>
-<td><a href="github.com/JasonWarrenUK/sparker">repo</a></td>
-</tr>
-<tr>
-<td>🗑</td>
-<td><strong>Pretty Vacancies</strong></td>
-<td>(1) ridiculous amount of work now (2) small convenience later</td>
-<td><a href="github.com/JasonWarrenUK/pretty-vacancies">repo</a></td>
-</tr>
-</table>
-
-<h4 align="center">Games</h4>
+<details align="left" id="whimsies">
+<summary><h3>Whimsies</h3></summary>
 
 <table align="left">
-<tr>
-<th></th>
-<th>Name</th>
-<th>Description</th>
-<th>Links</th>
-</tr>
-<tr>
-<td>✒️</td>
-<td><strong>The Work</strong></td>
-<td>write a thesis in one night whilst staving off existential angst</td>
-<td><a href="github.com/JasonWarrenUK/the-work">repo</a></td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Flyt</strong></td>
-<td>defeat the village's champion boaster by using a changing world as inspiration</td>
-<td><a href="github.com/JasonWarrenUK/flyt">repo</a></td>
-</tr>
-</table>
-</details>
-
-<details align="right" id="whimsies">
-<summary align="right"><h3>Whimsies</h3></summary>
-
-<table align="right">
 <tr>
 <th>Name</th>
 <th>Links</th>
 <th>Year</th>
 </tr>
 <tr>
+<td><strong>Rimewarden</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/rimewarden">repo</a></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><strong>Sith Maker</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/sith-maker">repo</a></td>
+<td>2026</td>
+</tr>
+<tr>
 <td><strong>Nihilistic Onboarder</strong></td>
-<td><a href="github.com/JasonWarrenUK/nihilistic-onboarder">repo</a></td>
+<td><a href="https://github.com/JasonWarrenUK/nihilistic-onboarder">repo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Hat Recommender</strong></td>
-<td><a href="github.com/JasonWarrenUK/telebrain">repo</a></td>
+<td><a href="https://github.com/JasonWarrenUK/telebrain">repo</a></td>
+<td>2025</td>
+</tr>
+<tr>
+<td><strong>Psyche</strong></td>
+<td><a href="https://github.com/fac-31/psyche">repo</a></td>
+<td>2025</td>
+</tr>
+<tr>
+<td><strong>Commons Traybake</strong></td>
+<td><a href="https://github.com/fac-31/commons-traybake">repo</a></td>
+<td>2025</td>
+</tr>
+<tr>
+<td><strong>ReDoT</strong></td>
+<td><a href="https://github.com/fac-31/ReDoT">repo</a></td>
+<td>2025</td>
+</tr>
+<tr>
+<td><strong>The Forgotten One</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/the-forgotten-one">repo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Petulant God</strong></td>
-<td><a href="github.com/JasonWarrenUK/petulant-god">repo</a></td>
+<td><a href="https://github.com/JasonWarrenUK/petulant-god">repo</a></td>
 <td>2023</td>
 </tr>
 <tr>
 <td><strong>Melonhead</strong></td>
-<td><a href="neurosocialist.itch.io/melonhead">itch.io</a></td>
+<td><a href="https://neurosocialist.itch.io/melonhead">itch.io</a></td>
 <td>2022</td>
 </tr>
 <tr>
 <td><strong>Prisms</strong></td>
-<td><a href="neurosocialist.itch.io/prisms">itch.io</a>/<a href="github.com/JasonWarrenUK/prism">repo</a></td>
+<td><a href="https://neurosocialist.itch.io/prisms">itch.io</a> / <a href="https://github.com/JasonWarrenUK/prism">repo</a></td>
 <td>2021</td>
 </tr>
 <tr>
 <td><strong>My Brothers, Counting</strong></td>
-<td><a href="neurosocialist.itch.io/brothers-trying-to-count">repo</a></td>
+<td><a href="https://neurosocialist.itch.io/brothers-trying-to-count">itch.io</a></td>
 <td>2020</td>
 </tr>
 </table>
 </details>
 
-<details align="left" id="idea-graveyard">
-<summary align="left"><h3>Idea Graveyard</h3></summary>
+<details align="right" id="idea-graveyard">
+<summary><h3>Idea Graveyard</h3></summary>
 
-<table align="left">>
+<table align="right">
 <tr>
 <th>Name</th>
 <th>Links</th>
 </tr>
 <tr>
 <td><strong>Got My Back</strong></td>
-<td><a href="github.com/JasonWarrenUK/got-my-back">Repo</a></td>
+<td><a href="https://github.com/JasonWarrenUK/got-my-back">repo</a></td>
 </tr>
 <tr>
 <td><strong>Knowledge Kata</strong></td>
-<td><a href="github.com/JasonWarrenUK/knowledge-kata">Repo</a></td>
+<td><a href="https://github.com/JasonWarrenUK/knowledge-kata">repo</a></td>
 </tr>
 </table>
 </details>
@@ -276,30 +367,21 @@ jason: [
 <h2 align="center">Hit Me Up</h2>
 
 <p align="center">
-<a align="center" href="https://twitter.com/neurosocialist" target="blank">
-<img alt="@neurosocialist on Twitter"
-align="center"
-src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
-height="30"
-width="40"
+<a href="https://bsky.app/profile/neurosocialist.bsky.social" target="blank">
+<img alt="neurosocialist on Bluesky"
+src="https://img.shields.io/badge/Bluesky-neurosocialist-0285FF?style=flat-square&logo=bluesky&logoColor=white"
 />
 </a>
-
-<a align="center" href="https://linkedin.com/in/jasonwarrenuk" target="blank">
+&nbsp;
+<a href="https://neurosocialist.itch.io" target="blank">
+<img alt="neurosocialist on itch.io"
+src="https://img.shields.io/badge/itch.io-neurosocialist-FA5C5C?style=flat-square&logo=itchdotio&logoColor=white"
+/>
+</a>
+&nbsp;
+<a href="https://linkedin.com/in/jasonwarrenuk" target="blank">
 <img alt="jasonwarrenuk on LinkedIn"
-align="center"
-src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-height="30"
-width="40"
-/>
-</a>
-
-<a align="center" href="https://instagram.com/neurosocialist" target="blank">
-<img alt="neurosocialist on insta"
-align="center"
-src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
-height="30"
-width="40"
+src="https://img.shields.io/badge/LinkedIn-jasonwarrenuk-0A66C2?style=flat-square&logo=linkedin&logoColor=white"
 />
 </a>
 </p>
@@ -317,8 +399,8 @@ width="40"
 <h4 align="right"><s>I Need Help</s>Collaboration Opportunities</h4>
 
 <ul>
-<li>I’m looking to collaborate on <strong>useless-yet-interesting linguistics utilities & neurodivergent revolutionary digital infrastructure</strong></li>
-<li>I’m looking for help with <strong>basic life skills</strong></li>
+<li>I'm looking to collaborate on <strong>useless-yet-interesting linguistics utilities & neurodivergent revolutionary digital infrastructure</strong></li>
+<li>I'm looking for help with <strong>basic life skills</strong></li>
 </ul>
 </div>
 
@@ -326,8 +408,8 @@ width="40"
 <h4 align="right">Past Lives</h4>
 
 <ul>
-<li>Also I started by bimbling about with <a href="neurosocialist.itch.io/">ink stories</a></li>
-<li>I wroted a book: <a href="amazon.co.uk/Creating-Worlds-Immersive-Theatre-Making/dp/1848424450">here it is</a></li>
+<li>Also I started by bimbling about with <a href="https://neurosocialist.itch.io/">ink stories</a></li>
+<li>I wroted a book: <a href="https://amazon.co.uk/Creating-Worlds-Immersive-Theatre-Making/dp/1848424450">here it is</a></li>
 </ul>
 </div>
 
@@ -345,18 +427,21 @@ width="40"
 <details align="left" id="what-is-it-doing">
 <summary align="left"><h3>What Is It Doing?</h3></summary>
 
-<p>I’m currently seriously learning about...</p>
+<p>I'm currently seriously learning about...</p>
 
 <ul>
-<li><strong>Svelte</strong></li>
-<li><strong>neo4j</strong></li>
-<li><strong>MCP servers</strong></li>
+<li><strong>Claude Code</strong> (<em>deep customisation: hooks, skills, agents, output styles</em>)</li>
+<li><strong>Shell scripting</strong> & <strong>terminal customisation</strong></li>
+<li><strong>Tauri</strong></li>
+<li><strong>PostgreSQL</strong></li>
 </ul>
 
 <p>I'm also dabbling with...</p>
 
 <ul>
-<li><strong>ink</strong> (<em>CLI Building Framework</em>)</li>
+<li><strong>OpenTUI</strong></li>
+<li><strong>D3</strong></li>
+<li><strong>Docker</strong> & <strong>Kubernetes</strong></li>
 </ul>
 </details>
 </div>
@@ -396,7 +481,7 @@ src="https://go-skill-icons.vercel.app/api/icons?i=html,css,javascript,markdown,
 
 <div align="center" id="languages">
 <img alt="jasonwarrenuk"
-src="https://github-readme-stats.vercel.app/api/top-langs?username=jasonwarrenuk&show_icons=true&locale=en&layout=compact"
+src="https://github-readme-stats.vercel.app/api/top-langs?username=jasonwarrenuk&show_icons=true&locale=en&layout=compact&theme=gruvbox"
 />
 </div>
 
