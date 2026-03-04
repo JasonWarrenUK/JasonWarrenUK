@@ -35,16 +35,16 @@ import { roles } from "../../db/facts";
 import type { User, Profile } from "$lib/types"
 
 export function desc(user: User): Profile {
-const safe = (user.name != "Jason");
-const species = safe ? "human" : "goblin";
+const isSafe = (user.name != "Jason");
+const userSpecies = isSafe ? "human" : "goblin";
 
-const tags = [
+const userTags = [
 safe ? "pro" : "neurodivergent",
 safe ? "fullstack" : "anarchosocialist",
 safe ? "dev" : "goblin"
 ];
 
-const roles = user.roles
+const userRoles = user.roles
 ? user.roles
 : safe
 ? roles.default
@@ -52,9 +52,9 @@ const roles = user.roles
 
 return {
 name: user.name,
-species: species,
-desc: join(tags, " "),
-roles: roles
+species: userSpecies,
+desc: userTags.join(" "),
+roles: userRoles
 }
 }
 </pre></code>
@@ -82,6 +82,11 @@ export interface Profile extends User {
 species: string,
 desc: string,
 };
+
+type Species = "human" | "goblin"
+function isGoblin(user: User): user is User & {
+species: "goblin"
+}
 </pre></code>
 </details>
 </div>
