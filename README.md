@@ -1,9 +1,13 @@
+<!-- |========| Xxx |========| -->
+<!-- \--------\ Xxx \--------\ -->
 <h1 align="left">Oh God, It's Jason Warren</h1>
 
 <pre align="center">Neurodivergent • Anarchosocialist • Mouthy Little Gremlin</pre>
 
 ---
 
+<!-- |========| Xxx |========| -->
+<!-- \--------\ Xxx \--------\ -->
 <div id="dev-profile-api">
 <h2 align="center">Dev Profile API</h2>
 
