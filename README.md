@@ -138,7 +138,7 @@ export const roles = {
 <tr>
 <td>🏗️</td>
 <td><strong>FAC Internal Platform</strong></td>
-<td>monorepo platform: GraphQL API, Next.js & Vite apps, K8s deployment — with <a href="https://github.com/Jaz-spec">@Jaz-spec</a>, Izaak & Dan</td>
+<td>monorepo platform: GraphQL API, Next.js & Vite apps, K8s deployment — with <a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/izaakrogan">@izaakrogan</a> & <a href="https://github.com/sofer">@sofer</a></td>
 <td></td>
 </tr>
 <tr>
