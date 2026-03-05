@@ -17,12 +17,14 @@
 
 <code align="left"><pre>
 import { describe } from "./utils/getProfile";
+import { stack } from "../db/facts";
 
 const jason = { name: "Jason" } as const;
 const profile = describe(jason);
 
-console.log(profile.species);
-console.log(profile.desc);
+console.log(profile.species);  // "goblin"
+console.log(profile.desc);     // "neurodivergent anarchosocialist goblin"
+console.log(stack);            // ["svelte", "deno", "claude", "ink"]
 </pre></code>
 </details>
 </div>
@@ -126,7 +128,7 @@ export const roles = {
 <h2 align="center">The Debris Left in My Wake</h2>
 
 <details align="left" id="current-hyperfoci">
-<summary><h3>Current Hyperfoci</h3></summary>
+<summary><p><strong>Current Hyperfoci</strong></p></summary>
 
 <table align="left">
 <tr>
@@ -162,10 +164,10 @@ export const roles = {
 </table>
 </details>
 
-<details align="right" id="completed">
-<summary><h3>Completed</h3></summary>
+<details align="left" id="completed">
+<summary><p><strong>Completed</strong></p></summary>
 
-<table align="right">
+<table align="left">
 <tr>
 <th>Name</th>
 <th>Description</th>
@@ -205,7 +207,7 @@ export const roles = {
 </details>
 
 <details align="left" id="seed-vault">
-<summary><h3>Seed Vault</h3></summary>
+<summary><p><strong>Seed Vault</strong></p></summary>
 
 <table align="left">
 <tr>
@@ -247,10 +249,10 @@ export const roles = {
 </table>
 </details>
 
-<details align="right" id="dormant-ambitions">
-<summary><h3>Dormant Ambitions</h3></summary>
+<details align="left" id="dormant-ambitions">
+<summary><p><strong>Dormant Ambitions</strong></p></summary>
 
-<table align="right">
+<table align="left">
 <tr>
 <th></th>
 <th>Name</th>
@@ -279,94 +281,94 @@ export const roles = {
 </details>
 
 <details align="left" id="whimsies">
-<summary><h3>Whimsies</h3></summary>
+<summary><p><strong>Whimsies</strong></p></summary>
 
 <table align="left">
 <tr>
 <th>Name</th>
-<th>Team</th>
 <th>Links</th>
+<th>Team</th>
 <th>Year</th>
 </tr>
 <tr>
 <td><strong>Rimewarden</strong></td>
-<td></td>
 <td><a href="https://github.com/JasonWarrenUK/rimewarden">repo</a></td>
+<td></td>
 <td>2026</td>
 </tr>
 <tr>
 <td><strong>Sith Maker</strong></td>
-<td></td>
 <td><a href="https://github.com/JasonWarrenUK/sith-maker">repo</a></td>
+<td></td>
 <td>2026</td>
 </tr>
 <tr>
 <td><strong>Nihilistic Onboarder</strong></td>
-<td></td>
 <td><a href="https://github.com/JasonWarrenUK/nihilistic-onboarder">repo</a></td>
+<td></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Hat Recommender</strong></td>
-<td></td>
 <td><a href="https://github.com/JasonWarrenUK/telebrain">repo</a></td>
+<td></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Psyche</strong></td>
-<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a></td>
 <td><a href="https://github.com/fac-31/psyche">repo</a></td>
+<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Commons Traybake</strong></td>
-<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/nchua3012">@nchua3012</a> & <a href="https://github.com/JosephPotashnik">@JosephPotashnik</a></td>
 <td><a href="https://github.com/fac-31/commons-traybake">repo</a></td>
+<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/nchua3012">@nchua3012</a> & <a href="https://github.com/JosephPotashnik">@JosephPotashnik</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>ReDoT</strong></td>
-<td><a href="https://github.com/JosephPotashnik">@JosephPotashnik</a> & <a href="https://github.com/FortyTwoFortyTwo">@FortyTwoFortyTwo</a></td>
 <td><a href="https://github.com/fac-31/ReDoT">repo</a></td>
+<td><a href="https://github.com/JosephPotashnik">@JosephPotashnik</a> & <a href="https://github.com/FortyTwoFortyTwo">@FortyTwoFortyTwo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>The Forgotten One</strong></td>
-<td></td>
 <td><a href="https://github.com/JasonWarrenUK/the-forgotten-one">repo</a></td>
+<td></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Petulant God</strong></td>
-<td></td>
 <td><a href="https://github.com/JasonWarrenUK/petulant-god">repo</a></td>
+<td></td>
 <td>2023</td>
 </tr>
 <tr>
 <td><strong>Melonhead</strong></td>
-<td></td>
 <td><a href="https://neurosocialist.itch.io/melonhead">itch.io</a></td>
+<td></td>
 <td>2022</td>
 </tr>
 <tr>
 <td><strong>Prisms</strong></td>
-<td></td>
 <td><a href="https://neurosocialist.itch.io/prisms">itch.io</a> / <a href="https://github.com/JasonWarrenUK/prism">repo</a></td>
+<td></td>
 <td>2021</td>
 </tr>
 <tr>
 <td><strong>My Brothers, Counting</strong></td>
-<td></td>
 <td><a href="https://neurosocialist.itch.io/brothers-trying-to-count">itch.io</a></td>
+<td></td>
 <td>2020</td>
 </tr>
 </table>
 </details>
 
-<details align="right" id="idea-graveyard">
-<summary><h3>Idea Graveyard</h3></summary>
+<details align="left" id="idea-graveyard">
+<summary><p><strong>Idea Graveyard</strong></p></summary>
 
-<table align="right">
+<table align="left">
 <tr>
 <th>Name</th>
 <th>Links</th>
@@ -414,11 +416,11 @@ src="https://img.shields.io/badge/LinkedIn-jasonwarrenuk-0A66C2?style=flat-squar
 <div id="field-guide">
 <h2 align="center">Field Guide to Jason</h2>
 
-<details align="right" id="how-does-it-behave">
-<summary align="right"><h3>How Does It Behave?</h3></summary>
+<details align="left" id="how-does-it-behave">
+<summary><p><strong>How Does It Behave?</strong></p></summary>
 
-<div align="right" id="collaboration-opportunities">
-<h4 align="right"><s>I Need Help</s>Collaboration Opportunities</h4>
+<div align="left" id="collaboration-opportunities">
+<h4 align="left"><s>I Need Help</s>Collaboration Opportunities</h4>
 
 <ul>
 <li>I'm looking to collaborate on <strong>useless-yet-interesting linguistics utilities & neurodivergent revolutionary digital infrastructure</strong></li>
@@ -426,8 +428,8 @@ src="https://img.shields.io/badge/LinkedIn-jasonwarrenuk-0A66C2?style=flat-squar
 </ul>
 </div>
 
-<div align="right" id="past-lives">
-<h4 align="right">Past Lives</h4>
+<div align="left" id="past-lives">
+<h4 align="left">Past Lives</h4>
 
 <ul>
 <li>Also I started by bimbling about with <a href="https://neurosocialist.itch.io/">ink stories</a></li>
@@ -435,8 +437,8 @@ src="https://img.shields.io/badge/LinkedIn-jasonwarrenuk-0A66C2?style=flat-squar
 </ul>
 </div>
 
-<div align="right" id="trivia">
-<h4 align="right">Trivia</h4>
+<div align="left" id="trivia">
+<h4 align="left">Trivia</h4>
 
 <ul>
 <li>Ask me about <strong>arts pedagogy & interactive narrative</strong></li>
@@ -447,7 +449,7 @@ src="https://img.shields.io/badge/LinkedIn-jasonwarrenuk-0A66C2?style=flat-squar
 </details>
 
 <details align="left" id="what-is-it-doing">
-<summary align="left"><h3>What Is It Doing?</h3></summary>
+<summary><p><strong>What Is It Doing?</strong></p></summary>
 
 <p>I'm currently seriously learning about...</p>
 
