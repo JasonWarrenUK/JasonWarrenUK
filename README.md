@@ -140,7 +140,7 @@ export const roles = {
 <tr>
 <td>🏗️</td>
 <td><strong>FAC Internal Platform</strong></td>
-<td>monorepo platform: GraphQL API, Next.js & Vite apps, K8s deployment — with <a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/izaakrogan">@izaakrogan</a> & <a href="https://github.com/sofer">@sofer</a></td>
+<td>the internal engine that keeps Founders and Coders running — API, apps & workers — with <a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/izaakrogan">@izaakrogan</a> & <a href="https://github.com/sofer">@sofer</a></td>
 <td></td>
 </tr>
 <tr>
@@ -177,28 +177,28 @@ export const roles = {
 </tr>
 <tr>
 <td><strong>Iris</strong></td>
-<td>ILR toolkit for apprenticeship data submission — TUI, desktop & CLI</td>
+<td>turn messy learner CSVs into validated ILR submissions that the ESFA will actually accept</td>
 <td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, Izaak & Dan</td>
 <td>2026</td>
 <td><a href="https://github.com/foundersandcoders/iris">repo</a></td>
 </tr>
 <tr>
 <td><strong>Workwise</strong></td>
-<td>document workplace accessibility needs & share them on your own terms</td>
+<td>turn static accessibility surveys into dynamic evolving conversations</td>
 <td><a href="https://github.com/AlexVOiceover">@AlexVOiceover</a></td>
 <td>2025</td>
 <td><a href="https://github.com/foundersandcoders/workwise">repo</a></td>
 </tr>
 <tr>
 <td><strong>Things We Do</strong></td>
-<td></td>
+<td>track your mood & build a personal toolkit for getting through the day</td>
 <td><a href="https://github.com/jackcasstlesjones">@jackcasstlesjones</a>, <a href="https://github.com/maxitect">@maxitect</a> & <a href="https://github.com/gurtatiLND">@gurtatiLND</a></td>
 <td>2024</td>
 <td><a href="https://github.com/fac30/things-we-do">repo</a></td>
 </tr>
 <tr>
 <td><strong>Sakura</strong></td>
-<td></td>
+<td>a colour palette app where you can ask for "dark reddish purple" & it knows what you mean</td>
 <td><a href="https://github.com/jackcasstlesjones">@jackcasstlesjones</a> & <a href="https://github.com/JoshCodedit">@JoshCodedit</a></td>
 <td>2024</td>
 <td><a href="https://github.com/fac30/sakura-api">server</a> / <a href="https://github.com/fac30/sakura-front">client</a></td>
@@ -225,7 +225,7 @@ export const roles = {
 <tr>
 <td>🔮</td>
 <td><strong>Sparker</strong></td>
-<td>a note-taking app that supports SEN groups</td>
+<td>track observations about SEN students over time & surface the patterns a facilitator might miss</td>
 <td><a href="https://github.com/JasonWarrenUK/sparker">repo</a></td>
 </tr>
 <tr>
@@ -243,7 +243,7 @@ export const roles = {
 <tr>
 <td>🔬</td>
 <td><strong>Prism</strong></td>
-<td>visualise educational networks & deliver personalised learning through AI-curated paths</td>
+<td>map the tangled web of learners, facilitators & projects so the right learning finds the right person</td>
 <td><a href="https://github.com/foundersandcoders/prism">repo</a></td>
 </tr>
 </table>
@@ -268,13 +268,13 @@ export const roles = {
 <tr>
 <td>💭</td>
 <td><strong>Inconsequential Thinking</strong></td>
-<td></td>
+<td>an MCP server that watches Claude think & suggests slash commands along the way</td>
 <td><a href="https://github.com/JasonWarrenUK/inconsequential-thinking">repo</a></td>
 </tr>
 <tr>
 <td>🧵</td>
 <td><strong>Beacons</strong></td>
-<td>store free text journals as actionable conversation graphs</td>
+<td>turn freeform journaling into a graph you can actually navigate & act on</td>
 <td><a href="https://github.com/foundersandcoders/beacons-backend">server</a> / <a href="https://github.com/foundersandcoders/beacons-frontend-v2">client</a></td>
 </tr>
 </table>
