@@ -164,30 +164,35 @@ export const roles = {
 <table align="right">
 <tr>
 <th>Name</th>
+<th>Description</th>
 <th>Team</th>
 <th>Year</th>
 <th>Links</th>
 </tr>
 <tr>
 <td><strong>Iris</strong></td>
+<td>ILR toolkit for apprenticeship data submission — TUI, desktop & CLI</td>
 <td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, Izaak & Dan</td>
 <td>2026</td>
 <td><a href="https://github.com/foundersandcoders/iris">repo</a></td>
 </tr>
 <tr>
 <td><strong>Workwise</strong></td>
+<td>document workplace accessibility needs & share them on your own terms</td>
 <td><a href="https://github.com/AlexVOiceover">@AlexVOiceover</a></td>
 <td>2025</td>
 <td><a href="https://github.com/foundersandcoders/workwise">repo</a></td>
 </tr>
 <tr>
 <td><strong>Things We Do</strong></td>
+<td></td>
 <td><a href="https://github.com/jackcasstlesjones">@jackcasstlesjones</a>, <a href="https://github.com/maxitect">@maxitect</a> & <a href="https://github.com/gurtatiLND">@gurtatiLND</a></td>
 <td>2024</td>
 <td><a href="https://github.com/fac30/things-we-do">repo</a></td>
 </tr>
 <tr>
 <td><strong>Sakura</strong></td>
+<td></td>
 <td><a href="https://github.com/jackcasstlesjones">@jackcasstlesjones</a> & <a href="https://github.com/JoshCodedit">@JoshCodedit</a></td>
 <td>2024</td>
 <td><a href="https://github.com/fac30/sakura-api">server</a> / <a href="https://github.com/fac30/sakura-front">client</a></td>
@@ -275,66 +280,79 @@ export const roles = {
 <table align="left">
 <tr>
 <th>Name</th>
+<th>Team</th>
 <th>Links</th>
 <th>Year</th>
 </tr>
 <tr>
 <td><strong>Rimewarden</strong></td>
+<td></td>
 <td><a href="https://github.com/JasonWarrenUK/rimewarden">repo</a></td>
 <td>2026</td>
 </tr>
 <tr>
 <td><strong>Sith Maker</strong></td>
+<td></td>
 <td><a href="https://github.com/JasonWarrenUK/sith-maker">repo</a></td>
 <td>2026</td>
 </tr>
 <tr>
 <td><strong>Nihilistic Onboarder</strong></td>
+<td></td>
 <td><a href="https://github.com/JasonWarrenUK/nihilistic-onboarder">repo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Hat Recommender</strong></td>
+<td></td>
 <td><a href="https://github.com/JasonWarrenUK/telebrain">repo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Psyche</strong></td>
+<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a></td>
 <td><a href="https://github.com/fac-31/psyche">repo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Commons Traybake</strong></td>
+<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/nchua3012">@nchua3012</a> & <a href="https://github.com/JosephPotashnik">@JosephPotashnik</a></td>
 <td><a href="https://github.com/fac-31/commons-traybake">repo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>ReDoT</strong></td>
+<td><a href="https://github.com/JosephPotashnik">@JosephPotashnik</a> & <a href="https://github.com/FortyTwoFortyTwo">@FortyTwoFortyTwo</a></td>
 <td><a href="https://github.com/fac-31/ReDoT">repo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>The Forgotten One</strong></td>
+<td></td>
 <td><a href="https://github.com/JasonWarrenUK/the-forgotten-one">repo</a></td>
 <td>2025</td>
 </tr>
 <tr>
 <td><strong>Petulant God</strong></td>
+<td></td>
 <td><a href="https://github.com/JasonWarrenUK/petulant-god">repo</a></td>
 <td>2023</td>
 </tr>
 <tr>
 <td><strong>Melonhead</strong></td>
+<td></td>
 <td><a href="https://neurosocialist.itch.io/melonhead">itch.io</a></td>
 <td>2022</td>
 </tr>
 <tr>
 <td><strong>Prisms</strong></td>
+<td></td>
 <td><a href="https://neurosocialist.itch.io/prisms">itch.io</a> / <a href="https://github.com/JasonWarrenUK/prism">repo</a></td>
 <td>2021</td>
 </tr>
 <tr>
 <td><strong>My Brothers, Counting</strong></td>
+<td></td>
 <td><a href="https://neurosocialist.itch.io/brothers-trying-to-count">itch.io</a></td>
 <td>2020</td>
 </tr>
@@ -430,10 +448,11 @@ src="https://img.shields.io/badge/LinkedIn-jasonwarrenuk-0A66C2?style=flat-squar
 <p>I'm currently seriously learning about...</p>
 
 <ul>
-<li><strong>Claude Code</strong> (<em>deep customisation: hooks, skills, agents, output styles</em>)</li>
+<li><strong>Claude Code</strong> (<em>deep customisation & power-user workflows: hooks, skills, agents, output styles</em>)</li>
 <li><strong>Shell scripting</strong> & <strong>terminal customisation</strong></li>
 <li><strong>Tauri</strong></li>
 <li><strong>PostgreSQL</strong></li>
+<li><strong>Bun</strong></li>
 </ul>
 
 <p>I'm also dabbling with...</p>
