@@ -126,7 +126,7 @@ export const roles = {
 <div id="debris">
 <h2 align="center">The Debris Left in My Wake</h2>
 
-<details align="left" id="current-hyperfoci"><summary><p><strong>Current Hyperfoci</strong></p></summary>
+<details align="left" id="current-hyperfoci"><summary><strong>Current Hyperfoci</strong></summary>
 
 <table align="left">
 <tr>
@@ -162,7 +162,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="completed"><summary><p><strong>Completed</strong></p></summary>
+<details align="left" id="completed"><summary><strong>Completed</strong></summary>
 
 <table align="left">
 <tr>
@@ -203,7 +203,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="seed-vault"><summary><p><strong>Seed Vault</strong></p></summary>
+<details align="left" id="seed-vault"><summary><strong>Seed Vault</strong></summary>
 
 <table align="left">
 <tr>
@@ -245,7 +245,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="dormant-ambitions"><summary><p><strong>Dormant Ambitions</strong></p></summary>
+<details align="left" id="dormant-ambitions"><summary><strong>Dormant Ambitions</strong></summary>
 
 <table align="left">
 <tr>
@@ -275,7 +275,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="whimsies"><summary><p><strong>Whimsies</strong></p></summary>
+<details align="left" id="whimsies"><summary><strong>Whimsies</strong></summary>
 
 <table align="left">
 <tr>
@@ -359,7 +359,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="idea-graveyard"><summary><p><strong>Idea Graveyard</strong></p></summary>
+<details align="left" id="idea-graveyard"><summary><strong>Idea Graveyard</strong></summary>
 
 <table align="left">
 <tr>
