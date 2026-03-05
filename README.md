@@ -21,17 +21,17 @@ import { describe } from "./utils/getProfile";
 const jason = { name: "Jason" } as const;
 const profile = describe(jason);
 
-console.log(profile.species);  // "goblin"
-console.log(profile.desc);     // "neurodivergent anarchosocialist goblin"
+console.log(profile.species);
+console.log(profile.desc);
 </pre></code>
 </details>
 </div>
 
 <div id="src/utils/getProfile.ts">
-<details align="right">
+<details align="left">
 <summary><strong>./src/utils/getProfile.ts</strong></summary>
 
-<code align="right"><pre>
+<code align="left"><pre>
 import { roles } from "../../db/facts";
 import type { Profile } from "../lib/types";
 
@@ -94,10 +94,10 @@ interface Profile&lt;S extends Species = "human"&gt; {
 </div>
 
 <div id="db/facts.ts">
-<details align="right">
+<details align="left">
 <summary><strong>./db/facts.ts</strong></summary>
 
-<code align="right"><pre>
+<code align="left"><pre>
 export const stack = [
   "svelte", "deno", "claude", "ink",
 ] as const satisfies readonly string[];
