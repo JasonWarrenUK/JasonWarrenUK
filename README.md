@@ -126,7 +126,7 @@ export const roles = {
 <div id="debris">
 <h2 align="center">The Debris Left in My Wake</h2>
 
-<details align="left" id="current-hyperfoci"><summary><strong>Current Hyperfoci</strong></summary>
+<details align="left" id="current-hyperfoci"><summary><strong>On Fire Right Now</strong></summary>
 
 <table align="left">
 <tr>
@@ -162,7 +162,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="completed"><summary><strong>Completed</strong></summary>
+<details align="left" id="completed"><summary><strong>Receipts</strong></summary>
 
 <table align="left">
 <tr>
@@ -203,7 +203,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="seed-vault"><summary><strong>Seed Vault</strong></summary>
+<details align="left" id="seed-vault"><summary><strong>Unreplied Texts</strong></summary>
 
 <table align="left">
 <tr>
@@ -245,7 +245,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="dormant-ambitions"><summary><strong>Dormant Ambitions</strong></summary>
+<details align="left" id="dormant-ambitions"><summary><strong>Pinned Tabs</strong></summary>
 
 <table align="left">
 <tr>
@@ -275,7 +275,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="whimsies"><summary><strong>Whimsies</strong></summary>
+<details align="left" id="whimsies"><summary><strong>Odd Socks</strong></summary>
 
 <table align="left">
 <tr>
@@ -359,7 +359,7 @@ export const roles = {
 </table>
 </details>
 
-<details align="left" id="idea-graveyard"><summary><strong>Idea Graveyard</strong></summary>
+<details align="left" id="idea-graveyard"><summary><strong>Cursed Tupperware</strong></summary>
 
 <table align="left">
 <tr>
@@ -376,6 +376,15 @@ export const roles = {
 </tr>
 </table>
 </details>
+</div>
+
+---
+
+<div id="recent-activity">
+<h2 align="center">Recent Mischief</h2>
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 </div>
 
 ---
@@ -410,7 +419,7 @@ src="https://img.shields.io/badge/pretend_to_be_professional_on-LinkedIn-689d6a?
 <h2 align="center">Field Guide to Jason</h2>
 
 <details align="left" id="how-does-it-behave">
-<summary><p><strong>How Does It Behave?</strong></p></summary>
+<summary><strong>How Does It Behave?</strong></summary>
 
 <div align="left" id="collaboration-opportunities">
 <h4 align="left"><s>I Need Help</s>Collaboration Opportunities</h4>
@@ -442,7 +451,7 @@ src="https://img.shields.io/badge/pretend_to_be_professional_on-LinkedIn-689d6a?
 </details>
 
 <details align="left" id="what-is-it-doing">
-<summary><p><strong>What Is It Doing?</strong></p></summary>
+<summary><strong>What Is It Doing?</strong></summary>
 
 <p>I'm currently seriously learning about...</p>
 
@@ -491,16 +500,10 @@ src="https://github-profile-trophy.vercel.app/?username=jasonwarrenuk&theme=gruv
 <p align="center">
 <a href="https://go-skill-icons.vercel.app/">
 <img alt="Other things what I is knowing"
-src="https://go-skill-icons.vercel.app/api/icons?i=html,css,javascript,markdown,json,yaml,regex"
+src="https://go-skill-icons.vercel.app/api/icons?i=html,css,javascript"
 />
 </a>
 </p>
-</div>
-
-<div align="center" id="languages">
-<img alt="jasonwarrenuk"
-src="https://github-readme-stats.vercel.app/api/top-langs?username=jasonwarrenuk&show_icons=true&locale=en&layout=compact&theme=gruvbox"
-/>
 </div>
 
 <div align="center" id="tool-badges">
@@ -552,15 +555,6 @@ src="https://www.codewars.com/users/JasonWarrenUK/badges/large?theme=light"
 />
 </a>
 </div>
-</div>
-
----
-
-<div id="recent-activity">
-<h2 align="center">Recent Mischief</h2>
-
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
 </div>
 
 <footer>
