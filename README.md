@@ -1,8 +1,7 @@
-<!-- |========| Xxx |========| -->
-<!-- \--------\ Xxx \--------\ -->
-<h1 align="left">Oh God, It's Jason Warren</h1>
-
-<pre align="center">Neurodivergent • Anarchosocialist • Mouthy Little Gremlin</pre>
+<!-- |========| Header |========| -->
+<p align="center">
+<img src="./assets/header.svg" alt="terminal showing: $ whoami → goblin" width="800"/>
+</p>
 
 ---
 
@@ -391,21 +390,21 @@ export const roles = {
 <h2 align="center">Hit Me Up</h2>
 
 <p align="center">
-<a href="https://bsky.app/profile/neurosocialist.bsky.social" target="blank">
-<img alt="neurosocialist on Bluesky"
-src="https://img.shields.io/badge/Bluesky-neurosocialist-0285FF?style=flat-square&logo=bluesky&logoColor=white"
+<a href="https://bsky.app/profile/neurosocialist.bsky.social">
+<img alt="yell at me on Bluesky"
+src="https://img.shields.io/badge/yell_at_me_on-Bluesky-458588?style=flat-square&logo=bluesky&logoColor=ebdbb2&labelColor=282828"
 />
 </a>
 &nbsp;
-<a href="https://neurosocialist.itch.io" target="blank">
-<img alt="neurosocialist on itch.io"
-src="https://img.shields.io/badge/itch.io-neurosocialist-FA5C5C?style=flat-square&logo=itchdotio&logoColor=white"
+<a href="https://neurosocialist.itch.io">
+<img alt="play my weird games on itch.io"
+src="https://img.shields.io/badge/play_my_weird_games_on-itch.io-d65d0e?style=flat-square&logo=itchdotio&logoColor=ebdbb2&labelColor=282828"
 />
 </a>
 &nbsp;
-<a href="https://linkedin.com/in/jasonwarrenuk" target="blank">
-<img alt="jasonwarrenuk on LinkedIn"
-src="https://img.shields.io/badge/LinkedIn-jasonwarrenuk-0A66C2?style=flat-square&logo=linkedin&logoColor=white"
+<a href="https://linkedin.com/in/jasonwarrenuk">
+<img alt="pretend to be professional on LinkedIn"
+src="https://img.shields.io/badge/pretend_to_be_professional_on-LinkedIn-689d6a?style=flat-square&logo=linkedin&logoColor=ebdbb2&labelColor=282828"
 />
 </a>
 </p>
@@ -520,13 +519,54 @@ src="https://go-skill-icons.vercel.app/api/icons?i=nodejs,expressjs,react,nextjs
 </p>
 </div>
 
+<div align="center" id="streak-stats">
+<img alt="GitHub streak stats"
+src="https://streak-stats.demolab.com/?user=JasonWarrenUK&theme=gruvbox"
+/>
+</div>
+
+<div align="center" id="activity-graph">
+<img alt="GitHub activity graph"
+src="https://github-readme-activity-graph.vercel.app/graph?username=JasonWarrenUK&theme=gruvbox&area=true"
+/>
+</div>
+
+<div align="center" id="summary-cards">
+<img alt="Profile details"
+src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JasonWarrenUK&theme=gruvbox"
+/>
+<br/>
+<img alt="Repos per language"
+src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JasonWarrenUK&theme=gruvbox"
+/>
+<img alt="Most commit language"
+src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=JasonWarrenUK&theme=gruvbox"
+/>
+<br/>
+<img alt="Stats"
+src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JasonWarrenUK&theme=gruvbox"
+/>
+<img alt="Productive time"
+src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=JasonWarrenUK&theme=gruvbox&utcOffset=0"
+/>
+</div>
+
 <div align="center" id="codewars">
-<a href="https://www.codewars.com/users/JasonWarrenUK" target="blank">
+<a href="https://www.codewars.com/users/JasonWarrenUK">
 <img alt="JasonWarrenUK's neglected codewars account"
 src="https://www.codewars.com/users/JasonWarrenUK/badges/large?theme=light"
 />
 </a>
 </div>
+</div>
+
+---
+
+<div id="recent-activity">
+<h2 align="center">Recent Mischief</h2>
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 </div>
 
 <footer>
