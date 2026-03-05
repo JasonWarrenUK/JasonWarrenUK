@@ -384,6 +384,11 @@ export const roles = {
 <h2 align="center">Recent Mischief</h2>
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#2](https://github.com/JasonWarrenUK/epoch/pull/2) in [JasonWarrenUK/epoch](https://github.com/JasonWarrenUK/epoch)
+2. 💪 Opened PR [#2](https://github.com/JasonWarrenUK/epoch/pull/2) in [JasonWarrenUK/epoch](https://github.com/JasonWarrenUK/epoch)
+3. 🎉 Merged PR [#1](https://github.com/JasonWarrenUK/JasonWarrenUK/pull/1) in [JasonWarrenUK/JasonWarrenUK](https://github.com/JasonWarrenUK/JasonWarrenUK)
+4. 🎉 Merged PR [#1](https://github.com/JasonWarrenUK/the-work/pull/1) in [JasonWarrenUK/the-work](https://github.com/JasonWarrenUK/the-work)
+5. 💪 Opened PR [#1](https://github.com/JasonWarrenUK/the-work/pull/1) in [JasonWarrenUK/the-work](https://github.com/JasonWarrenUK/the-work)
 <!--END_SECTION:activity-->
 </div>
 
