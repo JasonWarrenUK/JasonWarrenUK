@@ -134,7 +134,7 @@ export const roles = {
 <tr>
 <td>🏗️</td>
 <td><strong>FAC Internal Platform</strong></td>
-<td>ILR toolkit for apprenticeship data submission, with <a href="https://github.com/Jaz-spec">@Jaz-spec</a>, Izaak & Dan</td>
+<td>monorepo platform: GraphQL API, Next.js & Vite apps, K8s deployment — with <a href="https://github.com/Jaz-spec">@Jaz-spec</a>, Izaak & Dan</td>
 <td></td>
 </tr>
 <tr>
@@ -184,13 +184,13 @@ export const roles = {
 <td><strong>Things We Do</strong></td>
 <td><a href="https://github.com/jackcasstlesjones">@jackcasstlesjones</a>, <a href="https://github.com/maxitect">@maxitect</a> & <a href="https://github.com/gurtatiLND">@gurtatiLND</a></td>
 <td>2024</td>
-<td></td>
+<td><a href="https://github.com/fac30/things-we-do">repo</a></td>
 </tr>
 <tr>
 <td><strong>Sakura</strong></td>
 <td><a href="https://github.com/jackcasstlesjones">@jackcasstlesjones</a> & <a href="https://github.com/JoshCodedit">@JoshCodedit</a></td>
 <td>2024</td>
-<td></td>
+<td><a href="https://github.com/fac30/sakura-api">server</a> / <a href="https://github.com/fac30/sakura-front">client</a></td>
 </tr>
 </table>
 </details>
@@ -215,19 +215,19 @@ export const roles = {
 <td>🔮</td>
 <td><strong>Sparker</strong></td>
 <td>a note-taking app that supports SEN groups</td>
-<td></td>
+<td><a href="https://github.com/JasonWarrenUK/sparker">repo</a></td>
 </tr>
 <tr>
 <td>⏳</td>
 <td><strong>Grand Chronicle</strong></td>
 <td>taking someone who witnessed a historical event & see what else they lived through</td>
-<td></td>
+<td><a href="https://github.com/JasonWarrenUK/grand-chronicle">repo</a></td>
 </tr>
 <tr>
 <td>🗑️</td>
 <td><strong>Pretty Vacancies</strong></td>
 <td>(1) ridiculous amount of work now (2) small convenience later</td>
-<td></td>
+<td><a href="https://github.com/JasonWarrenUK/pretty-vacancies">repo</a></td>
 </tr>
 <tr>
 <td>🔬</td>
