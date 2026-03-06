@@ -384,11 +384,11 @@ export const roles = {
 <h2 align="center">Recent Mischief</h2>
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#1](https://github.com/JasonWarrenUK/aie-rag/pull/1) in [JasonWarrenUK/aie-rag](https://github.com/JasonWarrenUK/aie-rag)
-2. 🎉 Merged PR [#2](https://github.com/JasonWarrenUK/epoch/pull/2) in [JasonWarrenUK/epoch](https://github.com/JasonWarrenUK/epoch)
-3. 💪 Opened PR [#2](https://github.com/JasonWarrenUK/epoch/pull/2) in [JasonWarrenUK/epoch](https://github.com/JasonWarrenUK/epoch)
-4. 🎉 Merged PR [#1](https://github.com/JasonWarrenUK/JasonWarrenUK/pull/1) in [JasonWarrenUK/JasonWarrenUK](https://github.com/JasonWarrenUK/JasonWarrenUK)
-5. 🎉 Merged PR [#1](https://github.com/JasonWarrenUK/the-work/pull/1) in [JasonWarrenUK/the-work](https://github.com/JasonWarrenUK/the-work)
+1. 🎉 Merged PR [#4](https://github.com/JasonWarrenUK/epoch/pull/4) in [JasonWarrenUK/epoch](https://github.com/JasonWarrenUK/epoch)
+2. 🎉 Merged PR [#2](https://github.com/JasonWarrenUK/the-work/pull/2) in [JasonWarrenUK/the-work](https://github.com/JasonWarrenUK/the-work)
+3. 🎉 Merged PR [#5](https://github.com/JasonWarrenUK/goblin-mode/pull/5) in [JasonWarrenUK/goblin-mode](https://github.com/JasonWarrenUK/goblin-mode)
+4. 💪 Opened PR [#4](https://github.com/JasonWarrenUK/epoch/pull/4) in [JasonWarrenUK/epoch](https://github.com/JasonWarrenUK/epoch)
+5. 💪 Opened PR [#2](https://github.com/JasonWarrenUK/the-work/pull/2) in [JasonWarrenUK/the-work](https://github.com/JasonWarrenUK/the-work)
 <!--END_SECTION:activity-->
 </div>
 
