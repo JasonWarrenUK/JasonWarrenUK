@@ -384,11 +384,11 @@ export const roles = {
 <h2 align="center">Recent Mischief</h2>
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#10](https://github.com/JasonWarrenUK/wyrd/pull/10) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
-2. 🎉 Merged PR [#5](https://github.com/JasonWarrenUK/wyrd/pull/5) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
-3. 🎉 Merged PR [#9](https://github.com/JasonWarrenUK/wyrd/pull/9) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
-4. 🎉 Merged PR [#8](https://github.com/JasonWarrenUK/wyrd/pull/8) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
-5. 🎉 Merged PR [#7](https://github.com/JasonWarrenUK/wyrd/pull/7) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
+1. 🎉 Merged PR [#12](https://github.com/JasonWarrenUK/wyrd/pull/12) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
+2. 💪 Opened PR [#12](https://github.com/JasonWarrenUK/wyrd/pull/12) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
+3. 🎉 Merged PR [#11](https://github.com/JasonWarrenUK/wyrd/pull/11) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
+4. 💪 Opened PR [#11](https://github.com/JasonWarrenUK/wyrd/pull/11) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
+5. 🎉 Merged PR [#10](https://github.com/JasonWarrenUK/wyrd/pull/10) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
 <!--END_SECTION:activity-->
 </div>
 
