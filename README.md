@@ -100,7 +100,7 @@ interface Profile&lt;S extends Species = "human"&gt; {
 
 <code align="left"><pre>
 export const stack = [
-  "svelte", "deno", "claude", "ink",
+  "svelte", "deno", "claude", "tauri", "bun",
 ] as const satisfies readonly string[];
 
 export const roles = {
@@ -158,6 +158,12 @@ export const roles = {
 <td><strong>Those Who Came Before</strong></td>
 <td>try to understand a vanished culture by interpreting procedurally generated artefacts</td>
 <td><a href="https://github.com/JasonWarrenUK/those-who-came-before">repo</a></td>
+</tr>
+<tr>
+<td>🌀</td>
+<td><strong>Wyrd</strong></td>
+<td>a terminal-based personal productivity system backed by a flat-file property graph — tasks, notes, commitments, habits, and budgets, all connected</td>
+<td><a href="https://github.com/JasonWarrenUK/wyrd">repo</a></td>
 </tr>
 </table>
 </details>
@@ -228,7 +234,7 @@ export const roles = {
 <td>⏳</td>
 <td><strong>Grand Chronicle</strong></td>
 <td>taking someone who witnessed a historical event & see what else they lived through</td>
-<td><a href="https://github.com/JasonWarrenUK/grand-chronicle">repo</a></td>
+<td><a href="https://github.com/JasonWarrenUK/epoch">repo</a></td>
 </tr>
 <tr>
 <td>🗑️</td>
@@ -283,6 +289,24 @@ export const roles = {
 <th>Links</th>
 <th>Team</th>
 <th>Year</th>
+</tr>
+<tr>
+<td><strong>Grumble</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/grumble">repo</a></td>
+<td></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><strong>Top Girls</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/top-girls">repo</a></td>
+<td></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><strong>Code Arcana</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/code-arcana">repo</a></td>
+<td></td>
+<td>2026</td>
 </tr>
 <tr>
 <td><strong>Rimewarden</strong></td>
@@ -485,9 +509,14 @@ src="https://img.shields.io/badge/pretend_to_be_professional_on-LinkedIn-689d6a?
 
 <div align="center" id="like-badges">
 <p align="center">
-<a href="https://go-skill-icons.vercel.app/">
+<a href="https://skillicons.dev">
 <img alt="My Stack"
-src="https://go-skill-icons.vercel.app/api/icons?i=zed,typescript,deno,svelte,neo4j,langchain,claude,tailwindcss,daisyui,mermaid,n8n"
+src="https://skillicons.dev/icons?i=typescript,deno,svelte,tailwindcss,tauri,bun"
+/>
+</a>
+<a href="https://go-skill-icons.vercel.app/">
+<img alt="My Stack (continued)"
+src="https://go-skill-icons.vercel.app/api/icons?i=zed,neo4j,langchain,claude,daisyui,mermaid,n8n"
 />
 </a>
 </p>
@@ -503,9 +532,9 @@ src="https://github-profile-trophy.vercel.app/?username=jasonwarrenuk&theme=gruv
 
 <div align="center" id="lang-badges">
 <p align="center">
-<a href="https://go-skill-icons.vercel.app/">
+<a href="https://skillicons.dev">
 <img alt="Other things what I is knowing"
-src="https://go-skill-icons.vercel.app/api/icons?i=html,css,javascript"
+src="https://skillicons.dev/icons?i=html,css,javascript"
 />
 </a>
 </p>
@@ -513,9 +542,14 @@ src="https://go-skill-icons.vercel.app/api/icons?i=html,css,javascript"
 
 <div align="center" id="tool-badges">
 <p align="center">
-<a href="https://go-skill-icons.vercel.app/">
+<a href="https://skillicons.dev">
 <img alt="Other things what I is knowing"
-src="https://go-skill-icons.vercel.app/api/icons?i=nodejs,expressjs,react,nextjs,betterauth,postgresql,sqlite,supabase,mongodb"
+src="https://skillicons.dev/icons?i=nodejs,expressjs,react,nextjs,postgresql,sqlite,supabase,mongodb"
+/>
+</a>
+<a href="https://go-skill-icons.vercel.app/">
+<img alt="Other things what I is knowing (continued)"
+src="https://go-skill-icons.vercel.app/api/icons?i=betterauth"
 />
 </a>
 </p>
@@ -523,14 +557,18 @@ src="https://go-skill-icons.vercel.app/api/icons?i=nodejs,expressjs,react,nextjs
 
 <div align="center" id="streak-stats">
 <img alt="GitHub streak stats"
-src="https://streak-stats.demolab.com/?user=JasonWarrenUK&theme=gruvbox"
+src="./assets/streak.svg"
 />
 </div>
 
 <div align="center" id="activity-graph">
-<img alt="GitHub activity graph"
-src="https://github-readme-activity-graph.vercel.app/graph?username=JasonWarrenUK&theme=gruvbox&area=true"
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/snake.svg" />
+<source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg" />
+<img alt="GitHub contribution snake"
+src="./assets/snake.svg"
 />
+</picture>
 </div>
 
 <div align="center" id="summary-cards">
