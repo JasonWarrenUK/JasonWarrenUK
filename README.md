@@ -13,18 +13,15 @@
 <div id="src/index.ts">
 <details align="left">
 <summary><strong>./src/index.ts</strong></summary>
-
-<code align="left"><pre>
-import { describe } from "./utils/getProfile";
+<pre>
+<code>import { describe } from "./utils/getProfile";
 import { stack } from "../db/facts";
-
 const jason = { name: "Jason" } as const;
 const profile = describe(jason);
-
 console.log(profile.species);  // "goblin"
 console.log(profile.desc);     // "neurodivergent anarchosocialist goblin"
-console.log(stack);            // ["svelte", "deno", "claude", "ink"]
-</pre></code>
+console.log(stack);            // ["svelte", "deno", "claude", "ink"]</code>
+</pre>
 </details>
 </div>
 
@@ -32,8 +29,8 @@ console.log(stack);            // ["svelte", "deno", "claude", "ink"]
 <details align="left">
 <summary><strong>./src/utils/getProfile.ts</strong></summary>
 
-<code align="left"><pre>
-import { roles } from "../../db/facts";
+<pre>
+<code>import { roles } from "../../db/facts";
 import type { Profile } from "../lib/types";
 
 function isJason(name: string): name is "Jason" {
@@ -58,8 +55,8 @@ export function describe(user: { name: string }): Profile {
     desc: ["pro", "fullstack", "dev"].join(" "),
     roles: roles.default,
   };
-}
-</pre></code>
+}</code>
+</pre>
 </details>
 </div>
 
@@ -67,8 +64,8 @@ export function describe(user: { name: string }): Profile {
 <details align="left">
 <summary><strong>./src/lib/types.d.ts</strong></summary>
 
-<code align="left"><pre>
-type Species = "human" | "goblin";
+<pre>
+<code>type Species = "human" | "goblin";
 
 type Adjective = "pro" | "fullstack" | "neurodivergent" | "anarchosocialist";
 type Noun = "dev" | "goblin";
@@ -89,8 +86,8 @@ interface Profile&lt;S extends Species = "human"&gt; {
     ? "neurodivergent anarchosocialist goblin"
     : string;
   readonly roles: readonly Role[];
-}
-</pre></code>
+}</code>
+</pre>
 </details>
 </div>
 
@@ -98,8 +95,8 @@ interface Profile&lt;S extends Species = "human"&gt; {
 <details align="left">
 <summary><strong>./db/facts.ts</strong></summary>
 
-<code align="left"><pre>
-export const stack = [
+<pre>
+<code>export const stack = [
   "svelte", "deno", "claude", "tauri", "bun",
 ] as const satisfies readonly string[];
 
@@ -115,8 +112,8 @@ export const roles = {
     { org: "@fac30", role: "grad", from: "2024-09", to: "2024-12" },
     { org: "@FAC29A", role: "grad", from: "2023-09", to: "2023-11" },
   ],
-} as const;
-</pre></code>
+} as const;</code>
+</pre>
 </details>
 </div>
 </div>
