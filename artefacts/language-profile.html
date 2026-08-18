@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jason Warren — Language Selection Profile</title>
+<style>
+  :root {
+    --chasm:    #14121c;
+    --chasm-2:  #1d1a28;
+    --rosewash: #e8a7a0;
+    --aether:   #8fb8c9;
+    --tyrian:   #9a4c9e;
+    --blueglass:#5a7fa3;
+    --vein:     #c2607a;
+    --scar:     #d98b5f;
+    --paper:    #ece8e1;
+    --paper-dim:#a09aa8;
+    --hair:     #322d40;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  body {
+    background: var(--chasm);
+    color: var(--paper);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .mono {
+    font-family: ui-monospace, "SF Mono", "JetBrains Mono", "Fira Code", Menlo, monospace;
+  }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 28px; }
+
+  /* ---- hero ---- */
+  header {
+    padding: 88px 0 64px;
+    border-bottom: 1px solid var(--hair);
+    position: relative;
+  }
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--paper-dim);
+    margin-bottom: 26px;
+  }
+  h1 {
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    line-height: 1.02;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  h1 .thin { color: var(--paper-dim); font-weight: 400; font-style: italic; }
+  .lede {
+    margin-top: 28px;
+    max-width: 60ch;
+    font-size: 1.12rem;
+    color: #cdc8d2;
+  }
+  .lede strong { color: var(--rosewash); font-weight: 600; }
+
+  /* spectrum bar under hero */
+  .spectrum {
+    display: flex;
+    margin-top: 44px;
+    height: 8px;
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .spectrum span { flex: 1; transition: flex 0.4s ease; }
+  .spectrum span:nth-child(1) { background: var(--aether); flex: 5; }
+  .spectrum span:nth-child(2) { background: var(--scar); flex: 4; }
+  .spectrum span:nth-child(3) { background: var(--blueglass); flex: 3; }
+  .spectrum span:nth-child(4) { background: var(--tyrian); flex: 2; }
+  .spectrum span:nth-child(5) { background: var(--vein); flex: 1.5; }
+  .spectrum-key {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: var(--paper-dim);
+  }
+
+  /* ---- section heading ---- */
+  .section-head {
+    margin: 72px 0 8px;
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--paper-dim);
+  }
+
+  /* ---- language cards ---- */
+  .lang {
+    border-top: 1px solid var(--hair);
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 28px;
+  }
+  .lang-rank {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 2.4rem;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--accent, var(--paper));
+    position: relative;
+  }
+  .lang-rank::after {
+    content: attr(data-tier);
+    display: block;
+    margin-top: 10px;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--paper-dim);
+    writing-mode: horizontal-tb;
+  }
+  .lang-body h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .lang-body h2 .verdict {
+    font-size: 0.7rem;
+    font-family: ui-monospace, Menlo, monospace;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 4px;
+    color: var(--chasm);
+    background: var(--accent);
+    font-weight: 700;
+  }
+  .rule {
+    margin: 16px 0 18px;
+    padding-left: 16px;
+    border-left: 2px solid var(--accent);
+    font-size: 1.05rem;
+    color: #d8d3dd;
+  }
+  .lang-body p { margin-bottom: 14px; color: #c4bfca; }
+  .lang-body p:last-child { margin-bottom: 0; }
+  .lang-body strong { color: var(--paper); font-weight: 600; }
+
+  .evidence {
+    margin-top: 20px;
+    background: var(--chasm-2);
+    border: 1px solid var(--hair);
+    border-radius: 8px;
+    padding: 16px 18px;
+  }
+  .evidence-label {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.64rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .evidence p { font-size: 0.96rem; color: #b8b3be; margin: 0; }
+  .evidence .proj { color: var(--paper); font-weight: 600; }
+
+  .caveat {
+    margin-top: 14px;
+    font-size: 0.92rem;
+    color: var(--paper-dim);
+    font-style: italic;
+  }
+  .caveat::before {
+    content: "↜ honest weakness  ";
+    font-style: normal;
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--vein);
+  }
+
+  /* ---- decision rule footer ---- */
+  .ruleblock {
+    margin: 72px 0 0;
+    border-top: 1px solid var(--hair);
+    padding-top: 40px;
+  }
+  .ruleblock h3 {
+    font-size: 1.3rem;
+    margin-bottom: 22px;
+    font-weight: 600;
+  }
+  .ruleblock ol { list-style: none; counter-reset: r; }
+  .ruleblock li {
+    counter-increment: r;
+    padding: 14px 0 14px 52px;
+    position: relative;
+    border-bottom: 1px solid var(--hair);
+    color: #c4bfca;
+  }
+  .ruleblock li:last-child { border-bottom: none; }
+  .ruleblock li::before {
+    content: counter(r);
+    position: absolute;
+    left: 0; top: 12px;
+    width: 32px; height: 32px;
+    display: grid; place-items: center;
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.85rem;
+    border-radius: 50%;
+    background: var(--chasm-2);
+    border: 1px solid var(--hair);
+    color: var(--rosewash);
+  }
+  .ruleblock li b { color: var(--paper); }
+
+  footer {
+    margin: 64px 0 80px;
+    padding-top: 28px;
+    border-top: 1px solid var(--hair);
+    font-size: 0.82rem;
+    color: var(--paper-dim);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  footer .mono { letter-spacing: 0.06em; }
+
+  @media (max-width: 600px) {
+    .lang { grid-template-columns: 1fr; gap: 14px; }
+    .lang-rank { font-size: 1.8rem; }
+    .lang-rank::after { display: inline; margin-left: 12px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Engineering Profile · Language Selection</div>
+    <h1>How I choose<br><span class="thin">what to build it in</span></h1>
+    <p class="lede">Five languages, ranked by my proficiency, sorted by <strong>where each one actually earns its place</strong> in the work I do: graph-shaped domain modelling, terminal-first tools, and narrative systems that expose structure rather than hide it. The axis that matters isn't native-versus-web. It's the shape of the artefact and how long I'll have to live with it.</p>
+    <div class="spectrum" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="spectrum-key">
+      <span>reach for daily</span>
+      <span>reach for rarely</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="section-head">The decisions, one language at a time</div>
+
+  <!-- TypeScript -->
+  <section class="lang" style="--accent: var(--aether);">
+    <div class="lang-rank" data-tier="primary">01</div>
+    <div class="lang-body">
+      <h2>TypeScript <span class="verdict">default, on merit</span></h2>
+      <div class="rule">Reach for it whenever the problem is structural: typed entities and the relationships between them.</div>
+      <p>Nearly everything I build is domain modelling. Graphs, branching clades, parallel world-states. TypeScript's structural typing fits that natively; I can describe a thing by its shape without ceremony, and discriminated unions handle the "this node is one of N kinds" problem that runs through all of it. It isn't the fallback I use when nothing better applies. It's the correct tool for the bulk of the work.</p>
+      <div class="evidence">
+        <div class="evidence-label">In the wild</div>
+        <p><span class="proj">The Tongue</span> leans on this constantly: a phonological engine and a cladistic model where every language node is one of a fixed set of kinds, each exhaustively handled. Discriminated unions are doing real load-bearing work, not decoration.</p>
+      </div>
+      <p class="caveat">The type system is erased at runtime. It's an expressive lint pass, not a guarantee about the running program; the moment I'm parsing untrusted input where the type lies, that erasure starts to bite.</p>
+    </div>
+  </section>
+
+  <!-- Go -->
+  <section class="lang" style="--accent: var(--scar);">
+    <div class="lang-rank" data-tier="tooling">02</div>
+    <div class="lang-body">
+      <h2>Go <span class="verdict">single-binary tools</span></h2>
+      <div class="rule">Reach for it when the deliverable is a terminal tool that should ship as one self-contained binary and stay readable solo over years.</div>
+      <p>The usual pitch (fast, concurrent, great for servers) is true and almost irrelevant to me. The real fit is threefold: one static binary with no runtime to install, the Charm / Bubble Tea ecosystem being the best TUI tooling going, and Go's deliberate austerity meaning the code I write in a hyperfocus burst reads the same cold six months later. The language refuses to let me be clever, which for a solo-maintained tool is a feature.</p>
+      <div class="evidence">
+        <div class="evidence-label">In the wild</div>
+        <p><span class="proj">Wyrd</span> (terminal-first directed property graph, Go/Bubble Tea TUI, JSONC flat-file storage) and <span class="proj">Iris</span> are correctly Go for exactly this reason. A productivity tool I want to live in should ship as one file with no node_modules and no venv.</p>
+      </div>
+      <p class="caveat">The type system is anaemic next to TS. Modelling "one of seven node kinds, exhaustively checked" is ergonomic in TypeScript and a faff in Go; interface-plus-type-switch loses me compile-time exhaustiveness. There's genuine friction between Go's distribution story and its type system for the graph modelling Wyrd needs.</p>
+    </div>
+  </section>
+
+  <!-- Python -->
+  <section class="lang" style="--accent: var(--blueglass);">
+    <div class="lang-rank" data-tier="borrow">03</div>
+    <div class="lang-body">
+      <h2>Python <span class="verdict">borrow &amp; leave</span></h2>
+      <div class="rule">Reach for it only to borrow someone else's linguistics or data library, then back out.</div>
+      <p>Its niche in my work is narrower than its reputation suggests. Where it earns a place is anything touching linguistics, NLP, or corpus tooling where the ecosystem has already solved the problem: IPA manipulation, phonological feature datasets, the work that already exists and would be daft to reimplement.</p>
+      <div class="evidence">
+        <div class="evidence-label">In the wild</div>
+        <p>If <span class="proj">The Tongue</span> ever ingests real historical language data, or I want to validate the phonological engine against an established model, Python is where that tooling lives. I reach into it for the job and back out.</p>
+      </div>
+      <p class="caveat">Its dynamism is the opposite of what I want. I favour systems that expose structure and fail at compile time; Python defers everything to runtime and is happiest when you stop asking it to be rigorous. Not somewhere a project's core should live.</p>
+    </div>
+  </section>
+
+  <!-- C# -->
+  <section class="lang" style="--accent: var(--tyrian);">
+    <div class="lang-rank" data-tier="parked">04</div>
+    <div class="lang-body">
+      <h2>C# <span class="verdict">known, parked</span></h2>
+      <div class="rule">Leave parked unless a native-GUI or heavy-concurrency-service need appears that nothing else covers.</div>
+      <p>A genuinely well-designed language with a richer type system than Go, but its centre of gravity (enterprise backends, Unity, the Microsoft ecosystem) sits outside my current orbit. I chose <span class="proj">Godot</span> for the 2D narrative-archaeology work explicitly for solo-dev ergonomics, which routes around the single most likely reason I'd otherwise touch C#.</p>
+      <div class="evidence">
+        <div class="evidence-label">When it would resurface</div>
+        <p>A desktop app needing proper native widgets rather than a TUI, or a long-running concurrent service wanting a richer type system than Go offers. Nothing I'm currently building points there.</p>
+      </div>
+      <p class="caveat">Not a weakness in the language so much as in its fit for me right now: it's the one option on this list with the thinnest claim on anything I'm actually making.</p>
+    </div>
+  </section>
+
+  <!-- Rust -->
+  <section class="lang" style="--accent: var(--vein);">
+    <div class="lang-rank" data-tier="suspicious">05</div>
+    <div class="lang-body">
+      <h2>Rust <span class="verdict">resist the seduction</span></h2>
+      <div class="rule">Reach for it only when a specific component is both performance- and correctness-critical, and isn't graph-shaped.</div>
+      <p>The language I'm most likely to want for the wrong reasons. Strong typing, sum types that model "one of N kinds" better than TS does, exhaustive matching, a culture of exactly the structural rigour I'm drawn to. On paper it's my aesthetic ideal, and that's precisely why I should be suspicious of myself reaching for it.</p>
+      <div class="evidence">
+        <div class="evidence-label">The honest split</div>
+        <p>For a phonological engine where I want correctness guarantees, Rust's enums and pattern matching outclass everything else here. But a directed property graph with shared, cyclic, mutable back-references is the canonical thing Rust makes painful; I'd end up reaching for <span class="mono">Rc&lt;RefCell&lt;&gt;&gt;</span> or arena indices, manually rebuilding what a GC'd language gives free.</p>
+      </div>
+      <p class="caveat">Highest ceiling, highest cost. The borrow checker is a continuous tax, heaviest exactly where my work lives. For a solo maintainer it's often the wrong trade, and the appeal is partly aesthetic rather than practical.</p>
+    </div>
+  </section>
+
+  <!-- decision rules -->
+  <div class="ruleblock">
+    <h3>The rule, stripped down</h3>
+    <ol>
+      <li><b>TypeScript</b> by default for anything structural, web-facing, or iterating fast on typed relationships.</li>
+      <li><b>Go</b> when the deliverable is a CLI or TUI that should ship as one binary and outlive my memory of writing it.</li>
+      <li><b>Python</b> only to borrow a linguistics or data library, then leave.</li>
+      <li><b>C#</b> parked until a native-GUI or heavy-concurrency need nothing else covers turns up.</li>
+      <li><b>Rust</b> only for a component that's performance- <em>and</em> correctness-critical and not graph-shaped. Never the graph core of Wyrd, however pretty the enums look.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>Jason Warren · Developer &amp; Facilitator</span>
+    <span class="mono">palette: iris · chasm / rosewash / aether / tyrian / blueglass / vein / scar</span>
+  </footer>
+
+</main>
+</body>
+</html>
