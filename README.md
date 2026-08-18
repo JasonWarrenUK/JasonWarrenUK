@@ -125,6 +125,8 @@ export const roles = {
 
 <details align="left" id="current-hyperfoci"><summary><strong>On Fire Right Now</strong></summary>
 
+<p align="left"><em>what's eating my evenings</em></p>
+
 <table align="left">
 <tr>
 <th></th>
@@ -133,16 +135,28 @@ export const roles = {
 <th>Links</th>
 </tr>
 <tr>
-<td>🏗️</td>
-<td><strong>FAC Internal Platform</strong></td>
-<td>the internal engine that keeps Founders and Coders running — API, apps & workers — with <a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/izaakrogan">@izaakrogan</a> & <a href="https://github.com/sofer">@sofer</a></td>
-<td></td>
+<td>📋</td>
+<td><strong>Iris</strong></td>
+<td>turn messy learner CSVs into validated ILR submissions that the ESFA will actually accept</td>
+<td><a href="https://github.com/foundersandcoders/iris">repo</a></td>
 </tr>
 <tr>
-<td>✒️</td>
-<td><strong>The Work</strong></td>
-<td>write a thesis in one night whilst staving off existential angst</td>
-<td><a href="https://github.com/JasonWarrenUK/the-work">repo</a></td>
+<td>🌊</td>
+<td><strong>CHIRPdb</strong></td>
+<td>ingest maritime incident reports & serve them as a structured API</td>
+<td><a href="https://zigzag-technology.github.io/CHIRPdb-Documentation/">docs</a> / <a href="https://github.com/ZigZag-Technology">org</a></td>
+</tr>
+<tr>
+<td>🗣️</td>
+<td><strong>The Tongue</strong></td>
+<td>grow a proto-language, then watch it drift, spread & fracture into daughter tongues</td>
+<td><a href="https://the-tongue.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/the-tongue">repo</a></td>
+</tr>
+<tr>
+<td>🔨</td>
+<td><strong>Schema Forge</strong></td>
+<td>read XSD files & validate, map & generate the XML they describe</td>
+<td><a href="https://www.npmjs.com/package/@jasonwarrenuk/schema-forge">npm</a> / <a href="https://github.com/JasonWarrenUK/schema-forge">repo</a></td>
 </tr>
 <tr>
 <td>👹</td>
@@ -162,10 +176,24 @@ export const roles = {
 <td>a terminal-based personal productivity system backed by a flat-file property graph — tasks, notes, commitments, habits, and budgets, all connected</td>
 <td><a href="https://github.com/JasonWarrenUK/wyrd">repo</a></td>
 </tr>
+<tr>
+<td>💼</td>
+<td><strong>Portfolio</strong></td>
+<td>my actual portfolio, kept honest by a CLI that fingerprints every repo it claims</td>
+<td><a href="https://jason-warren.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/jason-warren">repo</a></td>
+</tr>
+<tr>
+<td>🎭</td>
+<td><strong>Michelle Guy</strong></td>
+<td>a site for an acting coach who deserves better than a Squarespace template</td>
+<td><a href="https://github.com/JasonWarrenUK/michelle-guy">repo</a></td>
+</tr>
 </table>
 </details>
 
 <details align="left" id="completed"><summary><strong>Receipts</strong></summary>
+
+<p align="left"><em>shipped, used by actual humans</em></p>
 
 <table align="left">
 <tr>
@@ -176,11 +204,18 @@ export const roles = {
 <th>Links</th>
 </tr>
 <tr>
-<td><strong>Iris</strong></td>
-<td>turn messy learner CSVs into validated ILR submissions that the ESFA will actually accept</td>
-<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, Izaak & Dan</td>
+<td><strong>FAC Internal Platform</strong></td>
+<td>the internal engine that keeps Founders and Coders running — API, apps & workers</td>
+<td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/izaakrogan">@izaakrogan</a> & <a href="https://github.com/sofer">@sofer</a></td>
 <td>2026</td>
-<td><a href="https://github.com/foundersandcoders/iris">repo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Guardrails</strong></td>
+<td>strip the PII out of your prompts before they ever reach an LLM</td>
+<td>Ahmed Shatat, <a href="https://github.com/mohmmadAyesh">@mohmmadAyesh</a> & Erica Gasparini</td>
+<td>2026</td>
+<td><a href="https://github.com/yalla-coop">org</a></td>
 </tr>
 <tr>
 <td><strong>Workwise</strong></td>
@@ -208,6 +243,8 @@ export const roles = {
 
 <details align="left" id="seed-vault"><summary><strong>Unreplied Texts</strong></summary>
 
+<p align="left"><em>the code exists; I walked away</em></p>
+
 <table align="left">
 <tr>
 <th></th>
@@ -216,16 +253,10 @@ export const roles = {
 <th>Links</th>
 </tr>
 <tr>
-<td>🍞</td>
-<td><strong>Bag of Bread</strong></td>
-<td>crumbs and nuggets for the Hovis-inclined</td>
-<td><a href="https://github.com/JasonWarrenUK/Bag-of-Bread">repo</a></td>
-</tr>
-<tr>
-<td>🔮</td>
-<td><strong>Sparker</strong></td>
-<td>track observations about SEN students over time & surface the patterns a facilitator might miss</td>
-<td><a href="https://github.com/JasonWarrenUK/sparker">repo</a></td>
+<td>✒️</td>
+<td><strong>The Work</strong></td>
+<td>write a thesis in one night whilst staving off existential angst</td>
+<td><a href="https://github.com/JasonWarrenUK/the-work">repo</a></td>
 </tr>
 <tr>
 <td>⏳</td>
@@ -234,28 +265,16 @@ export const roles = {
 <td><a href="https://github.com/JasonWarrenUK/epoch">repo</a></td>
 </tr>
 <tr>
-<td>🗑️</td>
-<td><strong>Pretty Vacancies</strong></td>
-<td>(1) ridiculous amount of work now (2) small convenience later</td>
-<td><a href="https://github.com/JasonWarrenUK/pretty-vacancies">repo</a></td>
+<td>🧠</td>
+<td><strong>Cogni</strong></td>
+<td>map your cognitive style across 17 compasses & find the dev methodology that fits</td>
+<td><a href="https://github.com/JasonWarrenUK/cogni">repo</a></td>
 </tr>
 <tr>
-<td>🔬</td>
-<td><strong>Prism</strong></td>
-<td>map the tangled web of learners, facilitators & projects so the right learning finds the right person</td>
-<td><a href="https://github.com/foundersandcoders/prism">repo</a></td>
-</tr>
-</table>
-</details>
-
-<details align="left" id="dormant-ambitions"><summary><strong>Pinned Tabs</strong></summary>
-
-<table align="left">
-<tr>
-<th></th>
-<th>Name</th>
-<th>Description</th>
-<th>Links</th>
+<td>🍳</td>
+<td><strong>Kitchen Gremlin</strong></td>
+<td>replace Paprika with something that does meal plans & shopping lists properly</td>
+<td><a href="https://github.com/JasonWarrenUK/kitchen-gremlin">repo</a></td>
 </tr>
 <tr>
 <td>🤖</td>
@@ -264,10 +283,22 @@ export const roles = {
 <td><a href="https://github.com/foundersandcoders/rhea">repo</a></td>
 </tr>
 <tr>
-<td>💭</td>
-<td><strong>Inconsequential Thinking</strong></td>
-<td>an MCP server that watches Claude think & suggests slash commands along the way</td>
-<td><a href="https://github.com/JasonWarrenUK/inconsequential-thinking">repo</a></td>
+<td>🗺️</td>
+<td><strong>Historia</strong></td>
+<td>watch Britain's kingdoms shift across an animated map from 300 to 1066 CE</td>
+<td><a href="https://github.com/JasonWarrenUK/historia">repo</a></td>
+</tr>
+<tr>
+<td>⚔️</td>
+<td><strong>Flyt</strong></td>
+<td>duel a Norseman through ritual insult poetry & defend your honour in verse</td>
+<td><a href="https://github.com/JasonWarrenUK/flyt">repo</a></td>
+</tr>
+<tr>
+<td>🔮</td>
+<td><strong>Sparker</strong></td>
+<td>track observations about SEN students over time & surface the patterns a facilitator might miss</td>
+<td><a href="https://github.com/JasonWarrenUK/sparker">repo</a></td>
 </tr>
 <tr>
 <td>🧵</td>
@@ -280,6 +311,8 @@ export const roles = {
 
 <details align="left" id="whimsies"><summary><strong>Odd Socks</strong></summary>
 
+<p align="left"><em>toys, experiments & things built for one person</em></p>
+
 <table align="left">
 <tr>
 <th>Name</th>
@@ -289,13 +322,13 @@ export const roles = {
 </tr>
 <tr>
 <td><strong>Grumble</strong></td>
-<td><a href="https://github.com/JasonWarrenUK/grumble">repo</a></td>
+<td><a href="https://grumble-azure.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/grumble">repo</a></td>
 <td></td>
 <td>2026</td>
 </tr>
 <tr>
 <td><strong>Top Girls</strong></td>
-<td><a href="https://github.com/JasonWarrenUK/top-girls">repo</a></td>
+<td><a href="https://top-girls.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/top-girls">repo</a></td>
 <td></td>
 <td>2026</td>
 </tr>
@@ -308,6 +341,12 @@ export const roles = {
 <tr>
 <td><strong>Rimewarden</strong></td>
 <td><a href="https://github.com/JasonWarrenUK/rimewarden">repo</a></td>
+<td></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><strong>Baby Names</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/baby-names">repo</a></td>
 <td></td>
 <td>2026</td>
 </tr>
@@ -367,7 +406,7 @@ export const roles = {
 </tr>
 <tr>
 <td><strong>Prisms</strong></td>
-<td><a href="https://neurosocialist.itch.io/prisms">itch.io</a> / <a href="https://github.com/JasonWarrenUK/prism">repo</a></td>
+<td><a href="https://neurosocialist.itch.io/prisms">itch.io</a> / <a href="https://github.com/JasonWarrenUK/prisms">repo</a></td>
 <td></td>
 <td>2021</td>
 </tr>
@@ -376,24 +415,6 @@ export const roles = {
 <td><a href="https://neurosocialist.itch.io/brothers-trying-to-count">itch.io</a></td>
 <td></td>
 <td>2020</td>
-</tr>
-</table>
-</details>
-
-<details align="left" id="idea-graveyard"><summary><strong>Cursed Tupperware</strong></summary>
-
-<table align="left">
-<tr>
-<th>Name</th>
-<th>Links</th>
-</tr>
-<tr>
-<td><strong>Got My Back</strong></td>
-<td><a href="https://github.com/JasonWarrenUK/got-my-back">repo</a></td>
-</tr>
-<tr>
-<td><strong>Knowledge Kata</strong></td>
-<td><a href="https://github.com/JasonWarrenUK/knowledge-kata">repo</a></td>
 </tr>
 </table>
 </details>
