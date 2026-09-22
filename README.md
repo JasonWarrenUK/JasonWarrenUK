@@ -422,20 +422,6 @@ export const roles = {
 
 ---
 
-<div id="recent-activity">
-<h2 align="center">Recent Mischief</h2>
-
-<!--START_SECTION:activity-->
-1. 🎉 Merged PR [#36](https://github.com/JasonWarrenUK/wyrd/pull/36) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
-2. 💪 Opened PR [#36](https://github.com/JasonWarrenUK/wyrd/pull/36) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
-3. 🎉 Merged PR [#35](https://github.com/JasonWarrenUK/wyrd/pull/35) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
-4. 💪 Opened PR [#35](https://github.com/JasonWarrenUK/wyrd/pull/35) in [JasonWarrenUK/wyrd](https://github.com/JasonWarrenUK/wyrd)
-5. 💪 Opened PR [#17](https://github.com/JasonWarrenUK/epoch/pull/17) in [JasonWarrenUK/epoch](https://github.com/JasonWarrenUK/epoch)
-<!--END_SECTION:activity-->
-</div>
-
----
-
 <div id="hit-me-up">
 <h2 align="center">Hit Me Up</h2>
 
@@ -540,14 +526,6 @@ src="https://go-skill-icons.vercel.app/api/icons?i=zed,neo4j,langchain,claude,da
 </p>
 </div>
 
-<div align="center" id="trophy-rack">
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-<img alt="JasonWarrenUK's GitHub Trophy Rack, courtesy of ryo-ma's incredible work"
-src="https://github-profile-trophy.vercel.app/?username=jasonwarrenuk&theme=gruvbox&no-frame=false&no-bg=false&rank=-C,-?&row=3&column=3&margin-h=15&margin-w=15"
-/>
-</a>
-</div>
-
 <div align="center" id="lang-badges">
 <p align="center">
 <a href="https://skillicons.dev">
@@ -571,12 +549,6 @@ src="https://go-skill-icons.vercel.app/api/icons?i=betterauth"
 />
 </a>
 </p>
-</div>
-
-<div align="center" id="streak-stats">
-<img alt="GitHub streak stats"
-src="./assets/streak.svg"
-/>
 </div>
 
 <div align="center" id="activity-graph">
