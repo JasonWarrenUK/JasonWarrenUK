@@ -431,13 +431,13 @@ export const roles = {
 src="https://img.shields.io/badge/yell_at_me_on-Bluesky-458588?style=flat-square&logo=bluesky&logoColor=ebdbb2&labelColor=282828"
 />
 </a>
-&nbsp;
+
 <a href="https://neurosocialist.itch.io">
 <img alt="play my weird games on itch.io"
 src="https://img.shields.io/badge/play_my_weird_games_on-itch.io-d65d0e?style=flat-square&logo=itchdotio&logoColor=ebdbb2&labelColor=282828"
 />
 </a>
-&nbsp;
+
 <a href="https://linkedin.com/in/jasonwarrenuk">
 <img alt="pretend to be professional on LinkedIn"
 src="https://img.shields.io/badge/pretend_to_be_professional_on-LinkedIn-689d6a?style=flat-square&logo=linkedin&logoColor=ebdbb2&labelColor=282828"
