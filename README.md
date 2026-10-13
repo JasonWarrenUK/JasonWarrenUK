@@ -560,50 +560,16 @@ src="https://img.shields.io/badge/pretend_to_be_professional_on-LinkedIn-689d6a?
 <p align="center">
 <a href="https://skillicons.dev">
 <img alt="My Stack"
-src="https://skillicons.dev/icons?i=typescript,deno,svelte,tailwindcss,tauri,bun"
+src="https://skillicons.dev/icons?i=typescript,svelte,bun,deno,tailwindcss,python,fastapi,go,godot,supabase,postgres,mongodb,vercel"
 />
 </a>
+<br/>
 <a href="https://go-skill-icons.vercel.app/">
 <img alt="My Stack (continued)"
-src="https://go-skill-icons.vercel.app/api/icons?i=zed,neo4j,langchain,claude,daisyui,mermaid,n8n"
+src="https://go-skill-icons.vercel.app/api/icons?i=neo4j,claude,langchain,vitest,zed"
 />
 </a>
 </p>
-</div>
-
-<div align="center" id="lang-badges">
-<p align="center">
-<a href="https://skillicons.dev">
-<img alt="Other things what I is knowing"
-src="https://skillicons.dev/icons?i=html,css,javascript"
-/>
-</a>
-</p>
-</div>
-
-<div align="center" id="tool-badges">
-<p align="center">
-<a href="https://skillicons.dev">
-<img alt="Other things what I is knowing"
-src="https://skillicons.dev/icons?i=nodejs,expressjs,react,nextjs,postgresql,sqlite,supabase,mongodb"
-/>
-</a>
-<a href="https://go-skill-icons.vercel.app/">
-<img alt="Other things what I is knowing (continued)"
-src="https://go-skill-icons.vercel.app/api/icons?i=betterauth"
-/>
-</a>
-</p>
-</div>
-
-<div align="center" id="activity-graph">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/snake.svg" />
-<source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg" />
-<img alt="GitHub contribution snake"
-src="./assets/snake.svg"
-/>
-</picture>
 </div>
 
 <div align="center" id="summary-cards">
@@ -611,27 +577,9 @@ src="./assets/snake.svg"
 src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JasonWarrenUK&theme=gruvbox"
 />
 <br/>
-<img alt="Repos per language"
-src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JasonWarrenUK&theme=gruvbox"
-/>
-<img alt="Most commit language"
-src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=JasonWarrenUK&theme=gruvbox"
-/>
-<br/>
-<img alt="Stats"
-src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JasonWarrenUK&theme=gruvbox"
-/>
 <img alt="Productive time"
 src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=JasonWarrenUK&theme=gruvbox&utcOffset=0"
 />
-</div>
-
-<div align="center" id="codewars">
-<a href="https://www.codewars.com/users/JasonWarrenUK">
-<img alt="JasonWarrenUK's neglected codewars account"
-src="https://www.codewars.com/users/JasonWarrenUK/badges/large?theme=light"
-/>
-</a>
 </div>
 </div>
 
