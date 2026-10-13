@@ -5,8 +5,8 @@
 
 ---
 
-<!-- |========| Xxx |========| -->
-<!-- \--------\ Xxx \--------\ -->
+<!-- |========| Dev Profile |========| -->
+<!-- \--------\ Dev Profile \--------\ -->
 <div id="dev-profile-api">
 <h2 align="center">Dev Profile API</h2>
 
@@ -20,7 +20,7 @@ const jason = { name: "Jason" } as const;
 const profile = describe(jason);
 console.log(profile.species);  // "goblin"
 console.log(profile.desc);     // "neurodivergent anarchosocialist goblin"
-console.log(stack);            // ["svelte", "deno", "claude", "ink"]</code>
+console.log(stack);            // ["svelte", "bun", "go", "python", "claude"]</code>
 </pre>
 </details>
 </div>
@@ -97,7 +97,7 @@ interface Profile&lt;S extends Species = "human"&gt; {
 
 <pre>
 <code>export const stack = [
-  "svelte", "deno", "claude", "tauri", "bun",
+  "svelte", "bun", "go", "python", "claude",
 ] as const satisfies readonly string[];
 
 export const roles = {
@@ -105,8 +105,9 @@ export const roles = {
     { org: "@techStartUp", role: "innovation engineer" },
   ],
   jason: [
-    { org: "@foundersandcoders", role: "apprentice dev", level: "mid/senior (shhh)", from: "2025" },
-    { org: "@foundersandcoders", role: "L6 AI apprenticeship mentor", from: "2025" },
+    { org: "@TandemCreativeDev", role: "developer", from: "2026-06" },
+    { org: "@foundersandcoders", role: "apprentice dev", level: "mid/senior (shhh)", from: "2025", to: "2026-06" },
+    { org: "@foundersandcoders", role: "L6 AI apprenticeship mentor", from: "2025", to: "2026-06" },
     { org: "@FAC-31", role: "facilitator", from: "2025-02", to: "2025-07" },
     { org: "@foundersandcoders", role: "dev", from: "2024-09", to: "2025" },
     { org: "@fac30", role: "grad", from: "2024-09", to: "2024-12" },
@@ -135,10 +136,10 @@ export const roles = {
 <th>Links</th>
 </tr>
 <tr>
-<td>📋</td>
-<td><strong>Iris</strong></td>
-<td>turn messy learner CSVs into validated ILR submissions that the ESFA will actually accept</td>
-<td><a href="https://github.com/foundersandcoders/iris">repo</a></td>
+<td>🏔️</td>
+<td><strong>Urheimat</strong></td>
+<td>lead a people across the ages, then watch future scholars try to reconstruct what you actually believed</td>
+<td><a href="https://urheimat.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/urheimat">repo</a></td>
 </tr>
 <tr>
 <td>🌊</td>
@@ -147,46 +148,28 @@ export const roles = {
 <td><a href="https://zigzag-technology.github.io/CHIRPdb-Documentation/">docs</a> / <a href="https://github.com/ZigZag-Technology">org</a></td>
 </tr>
 <tr>
-<td>🗣️</td>
-<td><strong>The Tongue</strong></td>
-<td>grow a proto-language, then watch it drift, spread & fracture into daughter tongues</td>
-<td><a href="https://the-tongue.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/the-tongue">repo</a></td>
+<td>🧭</td>
+<td><strong>Drift</strong></td>
+<td>a CLI that fingerprints every repo a portfolio claims, plus the SvelteKit site it keeps honest</td>
+<td><a href="https://jason-warren.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/jason-warren">repo</a></td>
 </tr>
 <tr>
-<td>🔨</td>
-<td><strong>Schema Forge</strong></td>
-<td>read XSD files & validate, map & generate the XML they describe</td>
-<td><a href="https://www.npmjs.com/package/@jasonwarrenuk/schema-forge">npm</a> / <a href="https://github.com/JasonWarrenUK/schema-forge">repo</a></td>
+<td>✒️</td>
+<td><strong>The Work</strong></td>
+<td>write a thesis in one night whilst staving off existential angst</td>
+<td><a href="https://jasonwarrenuk.github.io/the-work/">site</a> / <a href="https://github.com/JasonWarrenUK/the-work">repo</a></td>
 </tr>
 <tr>
 <td>👹</td>
 <td><strong>Goblin Mode</strong></td>
-<td>commands, skills, hooks, agents & output styles for Claude Code</td>
+<td>three goblins in a trenchcoat pretending to be a senior developer: Claude Code config shaped by ADHD, friction & spite</td>
 <td><a href="https://github.com/JasonWarrenUK/goblin-mode">repo</a></td>
 </tr>
 <tr>
-<td>🏛️</td>
-<td><strong>Those Who Came Before</strong></td>
-<td>try to understand a vanished culture by interpreting procedurally generated artefacts</td>
-<td><a href="https://github.com/JasonWarrenUK/those-who-came-before">repo</a></td>
-</tr>
-<tr>
-<td>🌀</td>
-<td><strong>Wyrd</strong></td>
-<td>a terminal-based personal productivity system backed by a flat-file property graph — tasks, notes, commitments, habits, and budgets, all connected</td>
-<td><a href="https://github.com/JasonWarrenUK/wyrd">repo</a></td>
-</tr>
-<tr>
-<td>💼</td>
-<td><strong>Portfolio</strong></td>
-<td>my actual portfolio, kept honest by a CLI that fingerprints every repo it claims</td>
-<td><a href="https://jason-warren.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/jason-warren">repo</a></td>
-</tr>
-<tr>
-<td>🎭</td>
-<td><strong>Michelle Guy</strong></td>
-<td>a site for an acting coach who deserves better than a Squarespace template</td>
-<td><a href="https://github.com/JasonWarrenUK/michelle-guy">repo</a></td>
+<td>🗺️</td>
+<td><strong>Historia</strong></td>
+<td>watch Britain's kingdoms shift across an animated map from 300 to 1066 CE</td>
+<td><a href="https://historia-opal.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/historia">repo</a></td>
 </tr>
 </table>
 </details>
@@ -204,8 +187,29 @@ export const roles = {
 <th>Links</th>
 </tr>
 <tr>
+<td><strong>Iris</strong></td>
+<td>turn messy learner CSVs into validated ILR submissions that the ESFA will actually accept</td>
+<td></td>
+<td>2026</td>
+<td><a href="https://github.com/foundersandcoders/iris">repo</a></td>
+</tr>
+<tr>
+<td><strong>Michelle Guy</strong></td>
+<td>a site for an acting coach who deserves better than a Squarespace template</td>
+<td></td>
+<td>2026</td>
+<td><a href="https://michelle-guy.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/michelle-guy">repo</a></td>
+</tr>
+<tr>
+<td><strong>Schema Forge</strong></td>
+<td>read XSD files & validate, map & generate the XML they describe</td>
+<td></td>
+<td>2026</td>
+<td><a href="https://www.npmjs.com/package/@jasonwarrenuk/schema-forge">npm</a> / <a href="https://github.com/JasonWarrenUK/schema-forge">repo</a></td>
+</tr>
+<tr>
 <td><strong>FAC Internal Platform</strong></td>
-<td>the internal engine that keeps Founders and Coders running — API, apps & workers</td>
+<td>the internal engine that keeps Founders and Coders running: API, apps & workers</td>
 <td><a href="https://github.com/Jaz-spec">@Jaz-spec</a>, <a href="https://github.com/izaakrogan">@izaakrogan</a> & <a href="https://github.com/sofer">@sofer</a></td>
 <td>2026</td>
 <td></td>
@@ -253,16 +257,34 @@ export const roles = {
 <th>Links</th>
 </tr>
 <tr>
-<td>✒️</td>
-<td><strong>The Work</strong></td>
-<td>write a thesis in one night whilst staving off existential angst</td>
-<td><a href="https://github.com/JasonWarrenUK/the-work">repo</a></td>
+<td>🌀</td>
+<td><strong>Wyrd</strong></td>
+<td>a terminal productivity system on a flat-file property graph: tasks, notes, habits & budgets, all connected</td>
+<td><a href="https://github.com/JasonWarrenUK/wyrd">repo</a></td>
+</tr>
+<tr>
+<td>🏛️</td>
+<td><strong>Those Who Came Before</strong></td>
+<td>try to understand a vanished culture by interpreting procedurally generated artefacts</td>
+<td><a href="https://jasonwarrenuk.github.io/those-who-came-before/">site</a> / <a href="https://github.com/JasonWarrenUK/those-who-came-before">repo</a></td>
+</tr>
+<tr>
+<td>🗣️</td>
+<td><strong>The Tongue</strong></td>
+<td>grow a proto-language, then watch it drift, spread & fracture into daughter tongues</td>
+<td><a href="https://the-tongue.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/the-tongue">repo</a></td>
+</tr>
+<tr>
+<td>🗡️</td>
+<td><strong>Bronze Remembers</strong></td>
+<td>a turn-based tactics RPG with a legacy spine, built in Godot</td>
+<td><a href="https://github.com/JasonWarrenUK/bronze-remembers">repo</a></td>
 </tr>
 <tr>
 <td>⏳</td>
 <td><strong>Grand Chronicle</strong></td>
 <td>taking someone who witnessed a historical event & see what else they lived through</td>
-<td><a href="https://github.com/JasonWarrenUK/epoch">repo</a></td>
+<td><a href="https://epoch-tau.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/epoch">repo</a></td>
 </tr>
 <tr>
 <td>🧠</td>
@@ -283,16 +305,10 @@ export const roles = {
 <td><a href="https://github.com/foundersandcoders/rhea">repo</a></td>
 </tr>
 <tr>
-<td>🗺️</td>
-<td><strong>Historia</strong></td>
-<td>watch Britain's kingdoms shift across an animated map from 300 to 1066 CE</td>
-<td><a href="https://github.com/JasonWarrenUK/historia">repo</a></td>
-</tr>
-<tr>
 <td>⚔️</td>
 <td><strong>Flyt</strong></td>
 <td>duel a Norseman through ritual insult poetry & defend your honour in verse</td>
-<td><a href="https://github.com/JasonWarrenUK/flyt">repo</a></td>
+<td><a href="https://flyt-delta.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/flyt">repo</a></td>
 </tr>
 <tr>
 <td>🔮</td>
@@ -319,6 +335,36 @@ export const roles = {
 <th>Links</th>
 <th>Team</th>
 <th>Year</th>
+</tr>
+<tr>
+<td><strong>Quiz Night</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/quiz">repo</a></td>
+<td></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><strong>Reach</strong></td>
+<td><a href="https://reach-phi-five.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/reach">repo</a></td>
+<td></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><strong>Explainers</strong></td>
+<td><a href="https://explainers-eta.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/explainers">repo</a></td>
+<td></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><strong>Tallywhack</strong></td>
+<td><a href="https://github.com/JasonWarrenUK/tallywhack">repo</a></td>
+<td></td>
+<td>2026</td>
+</tr>
+<tr>
+<td><strong>The World I'd Build You</strong></td>
+<td><a href="https://the-world-id-build-you.vercel.app">site</a> / <a href="https://github.com/JasonWarrenUK/lyra-rose">repo</a></td>
+<td></td>
+<td>2026</td>
 </tr>
 <tr>
 <td><strong>Grumble</strong></td>
@@ -477,7 +523,7 @@ src="https://img.shields.io/badge/pretend_to_be_professional_on-LinkedIn-689d6a?
 
 <ul>
 <li>Ask me about <strong>arts pedagogy & interactive narrative</strong></li>
-<li>How to reach me: <strong><s>gently, and with a kind smile</s> jason@foundersandcoders.com</strong></li>
+<li>How to reach me: <strong><s>gently, and with a kind smile</s> contact.jwarren@gmail.com</strong></li>
 <li>Fun Fact: <strong>There is no ethical consumption under late-stage capitalism</strong></li>
 </ul>
 </div>
@@ -486,22 +532,21 @@ src="https://img.shields.io/badge/pretend_to_be_professional_on-LinkedIn-689d6a?
 <details align="left" id="what-is-it-doing">
 <summary><strong>What Is It Doing?</strong></summary>
 
+<p>Daily drivers: <strong>TypeScript</strong>, <strong>Svelte</strong>, <strong>Bun</strong> & <strong>Python</strong>. I also build the agent tooling that the AI works inside: skills, hooks, subagents & orchestration workflows for Claude Code (see <a href="https://github.com/JasonWarrenUK/goblin-mode">Goblin Mode</a>).</p>
+
 <p>I'm currently seriously learning about...</p>
 
 <ul>
-<li><strong>Claude Code</strong> (<em>deep customisation & power-user workflows: hooks, skills, agents, output styles</em>)</li>
-<li><strong>Shell scripting</strong> & <strong>terminal customisation</strong></li>
-<li><strong>Tauri</strong></li>
-<li><strong>PostgreSQL</strong></li>
-<li><strong>Bun</strong></li>
+<li><strong>Go</strong> (<em>Bubbletea & friends, via Wyrd</em>)</li>
+<li><strong>Godot</strong> & <strong>GDScript</strong> (<em>via Bronze Remembers</em>)</li>
+<li><strong>pgvector</strong> & <strong>semantic search</strong> (<em>via CHIRPdb</em>)</li>
 </ul>
 
 <p>I'm also dabbling with...</p>
 
 <ul>
-<li><strong>OpenTUI</strong></li>
-<li><strong>D3</strong></li>
-<li><strong>Docker</strong> & <strong>Kubernetes</strong></li>
+<li><strong>Obsidian plugins</strong></li>
+<li><strong>Docker</strong></li>
 </ul>
 </details>
 </div>
