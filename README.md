@@ -5,88 +5,190 @@
 
 ---
 
-<!-- |========| Dev Profile |========| -->
-<!-- \--------\ Dev Profile \--------\ -->
-<div id="dev-profile-api">
-<h2 align="center">Dev Profile API</h2>
+<!-- |========| Dev Profiler |========| -->
+<div id="dev-profiler">
+<h2 align="center">Dev Profiler</h2>
 
-<div id="src/index.ts">
+<div id="src/routes/+page.svelte">
 <details align="left">
-<summary><strong>./src/index.ts</strong></summary>
+<summary><strong>./src/routes/+page.svelte</strong></summary>
+
 <pre>
-<code>import { describe } from "./utils/getProfile";
-import { stack } from "../db/facts";
-const jason = { name: "Jason" } as const;
-const profile = describe(jason);
-console.log(profile.species);  // "goblin"
-console.log(profile.desc);     // "neurodivergent anarchosocialist goblin"
-console.log(stack);            // ["svelte", "bun", "go", "python", "claude"]</code>
+<code>&lt;script lang="ts"&gt;
+  import { getProfile } from "#lib/profile.remote.ts";
+  import { START, step, type Phase, type Role } from "#lib/domain.ts";
+
+  const profile = await getProfile();
+  const [current, ...past] = profile.roles;
+
+  let phase = $state&lt;Phase&gt;(START);
+  const next = $derived(step(profile.loop, phase));
+
+  $effect(() =&gt; {
+    const then = next;
+    if (then === undefined) return;
+    const t = setTimeout(() =&gt; (phase = then), 4000);
+    return () =&gt; clearTimeout(t);
+  });
+&lt;/script&gt;
+
+{#snippet tenure({ role, org, from, to }: Role)}
+  &lt;li&gt;{role} at {org}, {from} to {to ?? "now"}&lt;/li&gt;
+{/snippet}
+
+&lt;h1&gt;{profile.name} is a {profile.desc}&lt;/h1&gt;
+
+{#if profile.species === "goblin"}
+  &lt;p&gt;now: {phase}&lt;/p&gt;
+  &lt;p&gt;next: {next}&lt;/p&gt;
+  &lt;p&gt;and after rebuilding? {profile.loop.rebuilding}&lt;/p&gt;
+{:else}
+  &lt;p&gt;now: {phase}&lt;/p&gt;
+  &lt;p&gt;next: {next ?? "nothing. they shipped."}&lt;/p&gt;
+{/if}
+
+&lt;ul&gt;
+  {@render tenure(current)}
+  {#each past as role (`${role.org}/${role.role}/${role.from}`)}
+    {@render tenure(role)}
+  {/each}
+&lt;/ul&gt;</code>
 </pre>
 </details>
 </div>
 
-<div id="src/utils/getProfile.ts">
+<div id="src/lib/profile.remote.ts">
 <details align="left">
-<summary><strong>./src/utils/getProfile.ts</strong></summary>
+<summary><strong>./src/lib/profile.remote.ts</strong></summary>
 
 <pre>
-<code>import { roles } from "../../db/facts";
-import type { Profile } from "../lib/types";
+<code>import { prerender } from "$app/server";
+import { describe } from "#lib/describe.ts";
+import type { AnyProfile } from "#lib/domain.ts";
+import { jason } from "#db/facts.ts";
 
-function isJason(name: string): name is "Jason" {
-  return name === "Jason";
+export const getProfile = prerender(async (): Promise&lt;AnyProfile&gt; =&gt; describe(jason));</code>
+</pre>
+</details>
+</div>
+
+<div id="src/lib/describe.ts">
+<details align="left">
+<summary><strong>./src/lib/describe.ts</strong></summary>
+
+<pre>
+<code>import { LOOP, type AnyProfile, type Being, type Profile } from "./domain.ts";
+import { roles } from "#db/facts.ts";
+
+function isJason(being: Being): being is Being &amp; { readonly name: "Jason" } {
+  return being.name === "Jason";
 }
 
-export function describe(user: { name: "Jason" }): Profile&lt;"goblin"&gt;;
-export function describe(user: { name: string }): Profile&lt;"human"&gt;;
-export function describe(user: { name: string }): Profile {
-  if (isJason(user.name)) {
+export function describe(being: Being &amp; { readonly name: "Jason" }): Profile&lt;"goblin"&gt;;
+export function describe(being: Being): Profile&lt;"human"&gt;;
+export function describe(being: Being): AnyProfile {
+  if (isJason(being)) {
     return {
-      name: user.name,
+      ...being,
       species: "goblin",
       desc: "neurodivergent anarchosocialist goblin",
       roles: roles.jason,
+      loop: LOOP.goblin,
     };
   }
 
   return {
-    name: user.name,
+    ...being,
     species: "human",
-    desc: ["pro", "fullstack", "dev"].join(" "),
-    roles: roles.default,
+    desc: "pro fullstack dev",
+    roles: roles.anyone,
+    loop: LOOP.human,
   };
 }</code>
 </pre>
 </details>
 </div>
 
-<div id="src/lib/types.d.ts">
+<div id="src/lib/domain.ts">
 <details align="left">
-<summary><strong>./src/lib/types.d.ts</strong></summary>
+<summary><strong>./src/lib/domain.ts</strong></summary>
 
 <pre>
-<code>type Species = "human" | "goblin";
+<code>// ---- primitives
 
-type Adjective = "pro" | "fullstack" | "neurodivergent" | "anarchosocialist";
-type Noun = "dev" | "goblin";
-type Tag = `${Adjective} ${Noun}`;
+type Digit = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+type Month = `0${Exclude&lt;Digit, 0&gt;}` | "10" | "11" | "12";
+export type YearMonth = `${number}-${Month}`;
+export type Handle = `@${string}`;
 
-interface Role {
-  readonly org: string;
+// ---- roles
+
+interface Tenure {
+  readonly org: Handle;
   readonly role: string;
   readonly level?: string;
-  readonly from: string;
-  readonly to?: string;
+  readonly from: YearMonth;
+}
+export type CurrentRole = Tenure &amp; { readonly to?: never };
+export type PastRole = Tenure &amp; { readonly to: YearMonth };
+export type Role = CurrentRole | PastRole;
+export type Timeline = readonly [CurrentRole, ...PastRole[]];
+
+// ---- species
+
+export type Species = "human" | "goblin";
+
+type Adjective&lt;S extends Species&gt; = S extends "goblin"
+  ? "neurodivergent" | "anarchosocialist"
+  : "pro" | "fullstack";
+type Noun&lt;S extends Species&gt; = S extends "goblin" ? "goblin" : "dev";
+type Pair&lt;A extends string, B extends string = A&gt; = A extends unknown
+  ? `${A} ${Exclude&lt;B, A&gt;}`
+  : never;
+export type Desc&lt;S extends Species&gt; = `${Pair&lt;Adjective&lt;S&gt;&gt;} ${Noun&lt;S&gt;}`;
+
+export interface Being {
+  readonly name: string;
+  readonly handle: Handle;
+  readonly stack: readonly string[];
 }
 
-interface Profile&lt;S extends Species = "human"&gt; {
-  readonly name: string;
+// ---- the loop
+
+export type Phase =
+  | "fixing a small thing"
+  | "questioning the foundations"
+  | "rebuilding"
+  | "shipped";
+
+export const LOOP = {
+  goblin: {
+    "fixing a small thing": "questioning the foundations",
+    "questioning the foundations": "rebuilding",
+    rebuilding: "fixing a small thing",
+  },
+  human: {
+    "fixing a small thing": "shipped",
+  },
+} as const satisfies { readonly [S in Species]: { readonly [P in Phase]?: Phase } };
+
+export const START = "fixing a small thing" satisfies Phase;
+
+export type Machine&lt;S extends Species&gt; = (typeof LOOP)[S];
+export const step = (machine: Partial&lt;Record&lt;Phase, Phase&gt;&gt;, phase: Phase) =&gt; machine[phase];
+export type Next&lt;S extends Species, P extends Phase&gt; = P extends keyof Machine&lt;S&gt;
+  ? Machine&lt;S&gt;[P]
+  : never;
+
+// ---- profile
+
+export interface Profile&lt;S extends Species = Species&gt; extends Being {
   readonly species: S;
-  readonly desc: S extends "goblin"
-    ? "neurodivergent anarchosocialist goblin"
-    : string;
-  readonly roles: readonly Role[];
-}</code>
+  readonly desc: Desc&lt;S&gt;;
+  readonly roles: Timeline;
+  readonly loop: Machine&lt;S&gt;;
+}
+export type AnyProfile = { [S in Species]: Profile&lt;S&gt; }[Species];</code>
 </pre>
 </details>
 </div>
@@ -96,24 +198,61 @@ interface Profile&lt;S extends Species = "human"&gt; {
 <summary><strong>./db/facts.ts</strong></summary>
 
 <pre>
-<code>export const stack = [
-  "svelte", "bun", "go", "python", "claude",
-] as const satisfies readonly string[];
+<code>import type { Being, Timeline } from "#lib/domain.ts";
+
+export const jason = {
+  name: "Jason",
+  handle: "@JasonWarrenUK",
+  stack: ["svelte", "bun", "go", "python", "claude"],
+} as const satisfies Being;
 
 export const roles = {
-  default: [
-    { org: "@techStartUp", role: "innovation engineer" },
-  ],
   jason: [
     { org: "@TandemCreativeDev", role: "developer", from: "2026-06" },
-    { org: "@foundersandcoders", role: "apprentice dev", level: "mid/senior (shhh)", from: "2025", to: "2026-06" },
-    { org: "@foundersandcoders", role: "L6 AI apprenticeship mentor", from: "2025", to: "2026-06" },
+    { org: "@foundersandcoders", role: "apprentice dev", level: "mid/senior (shhh)", from: "2025-01", to: "2026-06" },
+    { org: "@foundersandcoders", role: "L6 AI apprenticeship mentor", from: "2025-01", to: "2026-06" },
     { org: "@FAC-31", role: "facilitator", from: "2025-02", to: "2025-07" },
-    { org: "@foundersandcoders", role: "dev", from: "2024-09", to: "2025" },
+    { org: "@foundersandcoders", role: "dev", from: "2024-09", to: "2025-01" },
     { org: "@fac30", role: "grad", from: "2024-09", to: "2024-12" },
     { org: "@FAC29A", role: "grad", from: "2023-09", to: "2023-11" },
   ],
-} as const;</code>
+  anyone: [
+    { org: "@techStartUp", role: "innovation engineer", from: "2024-01" },
+  ],
+} as const satisfies { readonly [who: string]: Timeline };</code>
+</pre>
+</details>
+</div>
+
+<div id="src/lib/describe.test.ts">
+<details align="left">
+<summary><strong>./src/lib/describe.test.ts</strong></summary>
+
+<pre>
+<code>import { suite, test, expect, expectTypeOf } from "vitest";
+import { describe } from "./describe.ts";
+import { jason } from "#db/facts.ts";
+import type { Profile } from "./domain.ts";
+
+suite("the compiler knows", () =&gt; {
+  test("jason is a goblin", () =&gt; {
+    const profile = describe(jason);
+    expectTypeOf(profile).toEqualTypeOf&lt;Profile&lt;"goblin"&gt;&gt;();
+    expect(profile.desc).toBe("neurodivergent anarchosocialist goblin");
+  });
+
+  test("everyone else is a professional", () =&gt; {
+    const profile = describe({ name: "Dave", handle: "@dave", stack: ["react"] });
+    expectTypeOf(profile).toEqualTypeOf&lt;Profile&lt;"human"&gt;&gt;();
+    expect(profile.loop["fixing a small thing"]).toBe("shipped");
+  });
+
+  test("there is no promotion out of goblin", () =&gt; {
+    // @ts-expect-error Type '"goblin"' is not assignable to type '"human"'
+    const pro: Profile&lt;"human"&gt; = describe(jason);
+    expect(pro.species).toBe("goblin");
+  });
+});</code>
 </pre>
 </details>
 </div>
